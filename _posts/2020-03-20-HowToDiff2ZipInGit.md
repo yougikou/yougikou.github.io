@@ -4,7 +4,7 @@ title: "Git - 如何在Windows git环境下提取两次commit的文件增量并�
 subtitle: "SourceTree的Custom Actions的扩展"
 date: 2020-03-20 12:00:00
 author: "Giko"
-header-img: ""
+header-img: "img/post-bg-git.png"
 header-mask: 0.3
 catalog: true
 tags:
