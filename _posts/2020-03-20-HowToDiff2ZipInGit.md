@@ -23,7 +23,7 @@ tags:
 ### 一些通常能 Google 到的方法
 
 1. TortoiseGit 内建了一个在 log 画面中选择文件后抽取的功能
-   ![TortoiseGit Export Selection To...](../img/post/2020-03-20-HowToDiff2ZipInGit-1.jpg)
+   ![TortoiseGit Export Selection To...](https://yougikou.github.io/img/post/2020-03-20-HowToDiff2ZipInGit-1.jpg)
    这个功能对于抽取单次提取的文件很方便, 但是多次累计就用不上了, 在 log 画面选两个 commit 完全和 svn 不一样干脆就看不到文件了. 虽然网上有文章介绍这个小技巧, 但是因为这个原因, 所以...不完美.
 
 2. Windows batch
@@ -47,12 +47,12 @@ tags:
 
 2. 如何让 SourceTree 的 Custom Actions 执行 bash 的 shell scrip
    这个点是最重要的关键, 但是我在找这个解决方案的时候, 没有文章提及这点, 还是瞎猫碰死耗子在一片完全不相关的文章中找到了答案. 配置如下, Git 是大家都会装的东西, bash 自动附带.
-   ![SourceTree Custom Action Run Bash Script](../img/post/2020-03-20-HowToDiff2ZipInGit-2.jpg)
+   ![SourceTree Custom Action Run Bash Script](https://yougikou.github.io/img/post/2020-03-20-HowToDiff2ZipInGit-2.jpg)
 
 3. 这样我们就可以在 Windows 下用方便的 shell command 抽取两次提交的变更文件, 同时打包.
    但是还有一个问题就是如何打包成 zip, Windows 自身没有带这方面的命令. 而 Git 的 linux 工具包 unzip, tar 都带了, 唯独 zip 这个东西没带. (我在调查这个的时候有段小插曲, 我两台电脑, 一台有 zip 命令, 一台没有. 一开始我搞不懂我装了什么不一样的东西造成了这个差异, 花了好长时间才发现 Oracle 数据库安装目录的 bin 里面居然带了 zip.exe...好吧)
 
-   关键我在网上除了找得到这个项目(Info-ZIP)的代码, 居然找不到编译好的 zip.exe,拷贝来用. 有需要的朋友可以直接在这里下([zip.exe.zip](../attached/zip.exe.zip)).
+   关键我在网上除了找得到这个项目(Info-ZIP)的代码, 居然找不到编译好的 zip.exe,拷贝来用. 有需要的朋友可以直接在这里下([zip.exe.zip](https://yougikou.github.io/attached/zip.exe.zip)).
    放到 Git 安装文件夹的那个 linux 工具包路径(Git\usr\bin)里就可以像其他命令一样直接使用.
 
    下面就是 shell 本身, 其实搞明白就没啥大不了的. 有需要就参考一下.
