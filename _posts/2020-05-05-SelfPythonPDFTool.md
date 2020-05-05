@@ -4,7 +4,7 @@ title: "Python PDF自制工具"
 subtitle: "扫描文档的快速编辑"
 date: 2020-05-05 12:00:00
 author: "Giko"
-header-img: "img/2020-05-05-SelfPythonPDFTool-1.jpg"
+header-img: "img/post/2020-05-05-SelfPythonPDFTool-1.jpg"
 header-mask: 0.3
 catalog: true
 tags:
