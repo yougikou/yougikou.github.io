@@ -16,6 +16,7 @@ tags:
 ---
 
 ### 方便的快速编程语言和丰富的扩展
+
 &emsp;我对于Python的印象就是一个好写, 好除虫, 快速上手的强大的批处理工具语言.当然由于工作上不是经常用到,所以认识比较浅薄. 
 这阶段由于为了帮孩子有效复习, 买了可以双面扫描的打印机后, 发现家用打印机毕竟不是商用, 一些功能还是比较不方便.  
 譬如, 扫描下来的页面只能是竖着的, 电脑上查看要横过来还得自己旋转. 有些是书本册子的, 中间的装订线去除后扫描, 页面需要分割, 顺序也需要重新排序. 虽然有PDF编辑软件, 但每次这种单纯操作的工作量还是很大.  
@@ -23,9 +24,11 @@ tags:
 这时我首先想到了Python.
 
 ### 使用PDF库
+
 &emsp;pdfrw - 至少对于我的需求这个库非常的好. 一开始使用PyPDF2, 但是在分割的时候发现会造成文件大小翻倍, 也不能压缩,所以途中放弃转用pdfrw. 而且发现该作者还很热心, 在PyPDF2的分割文件大小翻倍的issue thread上给出pdfrw的写法.
 
 ### 自制工具
+
 &emsp;所有工具追求易用, 都采用选择PDF, 拖拽带相应的py上后就开始执行.
 所有输出统一到同文件夹内新建out的子文件夹中.
 出现任何异常console画面会停顿10秒可以查看出错的命令行数, 错误内容.
@@ -37,10 +40,8 @@ tags:
 1. [mergePdf.py](https://yougikou.github.io/attached/mergePdf.py)
 把拖拽的多个文件合并成一个文件. 拖拽时鼠标拖动的文件最好是第一个.
 不然可能点中的文件可以跑到头上去.
-
 2. [rotateL90.py](https://yougikou.github.io/attached/rotateL90.py)
 把拖拽的多个文件都执行向左旋转90度
-
 3. [split&sort.py](https://yougikou.github.io/attached/split&sort.py)
 这个比较高级点. 是根据以下的扫描前提进行处理的.  
 去装订线扫描时 - 从中间页(为第一页)开始扫描.  
@@ -50,6 +51,15 @@ tags:
    - 分页: 把每页分成左右两页
    - 排序: 根据上述规则, 把分割的页面按真正的页序排序
 
+2020-05-05追加
+
+1. [split&sort_reverse.py](https://yougikou.github.io/attached/split&sort_reverse.py)
+上一个脚本的小改动, 以应付竖版装订书的页序(像古文那样从右往左读,翻页的册子)
+2. [reverse.py](https://yougikou.github.io/attached/reverse.py)
+单纯倒序排列PDF页面.
+3. [delete.py](https://yougikou.github.io/attached/delete.py)
+删除指定页面, 仅处理单个文件. 删除页面以空格分隔指定.
+
+感觉有了python都懒得打开臃肿的PDF编辑软件了.
+
 分享py以供有同样需求的朋友, 或者当样例参考, 毕竟需求类似的话比自己从0开始考虑要省力很多.
-
-
