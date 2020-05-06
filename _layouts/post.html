@@ -117,22 +117,22 @@ layout: default
 <!-- 网易云跟帖JS代码 end -->
 {% endif %}
 
-<div id="container"></div>
-<link rel="stylesheet" href="/css/gitment.css">
-<script src="/js/gitment.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
 <script>
-var gitment = new Gitment({
-  id: '{{page.id}}',
-  owner: 'yougikou',
+var gitalk = new Gitalk({
+  clientID: '2911bc060770e30af140',
+  clientSecret: 'b8fa64db2e3e30feef9ef17b7981552e68dd6ee8',
   repo: 'yougikou.github.io',
-  oauth: {
-    client_id: '2911bc060770e30af140',
-    client_secret: 'b8fa64db2e3e30feef9ef17b7981552e68dd6ee8',
-  },
+  owner: 'yougikou',
+  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+  id: '{{page.id}}',      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
 })
-gitment.render('container')
+gitalk.render('gitalk-container')
 </script>
-
+  
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
