@@ -3413,13 +3413,10 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://github.com/login/oauth/access_token', {
+      _utils.http.post('https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token', {
         code: code,
         client_id: client_id,
-        client_secret: client_secret,
-        headers: {
-            accept: "application/json"
-        }
+        client_secret: client_secret
       }, '').then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
