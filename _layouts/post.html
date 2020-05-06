@@ -117,6 +117,20 @@ layout: default
 <!-- 网易云跟帖JS代码 end -->
 {% endif %}
 
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  // id: 'Page ID',
+  owner: 'yougikou',
+  repo: 'yougikou.github.io',
+  oauth: {
+    client_id: '2911bc060770e30af140',
+    client_secret: 'b8fa64db2e3e30feef9ef17b7981552e68dd6ee8',
+  },
+})
+gitment.render('container')
+</script>
 
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
