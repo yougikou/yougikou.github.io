@@ -69,10 +69,15 @@ ba_track_id: b192c35ce354956fd2afc7fda1dc75c3
 ga_track_id: "UA-161477593-1" # Format: UA-xxxxxx-xx
 ga_domain: yougikou.github.io
 
-# Gitment
-gitment:
-  id: 2911bc060770e30af140
-  secret: b8fa64db2e3e30feef9ef17b7981552e68dd6ee8
+# Gitalk
+gitalk:
+  enable: true
+  githubID: yougikou
+  repo: yougikou.github.io
+  clientID: 2911bc060770e30af140
+  clientSecret: b8fa64db2e3e30feef9ef17b7981552e68dd6ee8
+  admin: yougikou
+  distractionFreeMode: true
 
 # Sidebar settings
 sidebar: false # whether or not using Sidebar.
