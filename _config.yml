@@ -76,7 +76,6 @@ gitalk:
   repo: yougikou.github.io
   clientID: 2911bc060770e30af140
   clientSecret: b8fa64db2e3e30feef9ef17b7981552e68dd6ee8
-  accessToken: 7f349e0b31c68d67927cb31b19928acd1f8c2f0e
   admin: yougikou
   distractionFreeMode: true
 
