@@ -58,9 +58,6 @@ kramdown:
 # Disqus settings
 # disqus_username: giko
 
-# Netease settings
-# netease_comment: false
-
 # Analytics settings
 # Baidu Analytics
 ba_track_id: b192c35ce354956fd2afc7fda1dc75c3
