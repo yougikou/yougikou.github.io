@@ -77,7 +77,7 @@ gitalk:
   clientID: 2911bc060770e30af140
   clientSecret: b8fa64db2e3e30feef9ef17b7981552e68dd6ee8
   admin: yougikou
-  distractionFreeMode: true
+  distractionFreeMode: false
 
 # Sidebar settings
 sidebar: false # whether or not using Sidebar.
