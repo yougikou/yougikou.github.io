@@ -55,9 +55,6 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
-# disqus_username: giko
-
 # Analytics settings
 # Baidu Analytics
 ba_track_id: b192c35ce354956fd2afc7fda1dc75c3
