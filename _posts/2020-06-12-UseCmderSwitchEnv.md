@@ -50,9 +50,9 @@ tags:
 
 ### 确认
 这样你会发现在Windows系统的上下文菜单（右键菜单）中多了一个【Cmder Here w/jdk7】。  
-在任意文件夹中右键点击改项，就会启动一个cmder的命令行窗口。  
+在任意文件夹中右键点击该项，就会启动一个cmder的命令行窗口。  
 ![picture](https://yougikou.github.io/img/post/2020-06-12-UseCmderSwitchEnv_3.jpg)  
-输入java -version 就可以确认到你预先设置好的JDK了  
+输入java -version 就可以确认到你预先设置好的Java环境了  
 ![picture](https://yougikou.github.io/img/post/2020-06-12-UseCmderSwitchEnv_4.jpg)
 
 ### 应用和TODO
