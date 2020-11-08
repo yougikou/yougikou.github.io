@@ -57,7 +57,7 @@ tags:
 
 ![picture](https://yougikou.github.io/img/post/2020-11-08-ReactIndex_markdown-page.gif)
 
-### 加入添加学习资料复习页面-使用Ant design组件显得有逼格
+### 添加学习资料复习页面-使用Ant design组件显得有逼格
 
 ![picture](https://yougikou.github.io/img/post/2020-11-08-ReactIndex_simage-page.gif)
 
