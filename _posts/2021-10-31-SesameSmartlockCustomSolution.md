@@ -274,6 +274,9 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
 4. ランチャーアイコンで入ると、設定画面、NFCで起動する場合設備情報が十分であれば、スマートロック動作させる、でなければ設定画面へ
 5. 設定完了後、NFC TagWriter by NXPでApp起動Tag書き込みで、com.giko.sesamenfcを書き込めば、NFCTag作成完了。このTagで動作させることが可能です。
 
+![picture](https://yougikou.github.io/img/post/2021-10-31-SesameSmartlockCustomSolution_1.jpg)
+
+
 一応QRコードがある＋APIKeyがある前提のため、Appは誰でも使える状態になります。
 また裏で変な情報別のサーバに送信しているかいないか怪しい疑われるかものため、
 全量ソースは下記に公開しています。利用するオープンソースはあるが、それぞれみんなGoogleなど実績があるものになります。
@@ -287,7 +290,7 @@ Androidで直接動作できないが、Javaサンプルがあれば、組み込
 ## 動作してみるイメージは下記のようです。
 2回スキャンのイライラ感が軽減ですます。
 
-![](https://yougikou.github.io/img/post/2021-10-31-SesameSmartlockCustomSolution.mp4)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zqYlZ_rHLwM/0.jpg)](https://www.youtube.com/watch?v=zqYlZ_rHLwM)
 
 著者権を気にしていて、アイコンも自分で作りました。
 
