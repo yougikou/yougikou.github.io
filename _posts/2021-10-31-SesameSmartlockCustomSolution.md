@@ -65,13 +65,13 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
 ## では、開発：WebAPIをJavaで利用するの難点
 
 ### 参考文献→ブログ
-1. 公式：https://doc.candyhouse.co/ja/SesameAPI
-2. https://zenn.dev/key3/articles/6c1c2841d7a8a2
-3. https://github.com/mochipon/sesame-qr-reader/blob/main/pages/index.vue#L56-L137
+- 公式：https://doc.candyhouse.co/ja/SesameAPI
+- https://zenn.dev/key3/articles/6c1c2841d7a8a2
+- https://github.com/mochipon/sesame-qr-reader/blob/main/pages/index.vue#L56-L137
 
 ### 文献で書いたものを重複せず、実際あった問題と解決コードを載せる
 
-1. Nodejsではなく、Javaの場合、URLDecodeがとても重要です。最初はこちらに嵌めて、Base64のデコードがうまくいかず…  
+- Nodejsではなく、Javaの場合、URLDecodeがとても重要です。最初はこちらに嵌めて、Base64のデコードがうまくいかず…  
    下のscanStrは文献・ブログに記載があったSesameの共有QRコードからスキャンした文字列です。  
    下記コードはQRコードから読み取った情報（設備名、UUID、秘密キーを含めて）を解読しました。
    そのため、私のコードを利用する際、秘密キーを気にする必要がなく、QRコード情報＋APIKeyでOKです。
@@ -127,7 +127,7 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
         return new String(hexChars);
     }
    ```
-2. generateRandomTagのロジックのJava書き換え：正確にByte切り出し部分の理解とCMAC暗号化の実装  
+- generateRandomTagのロジックのJava書き換え：正確にByte切り出し部分の理解とCMAC暗号化の実装  
    ここは難しいから、一々Nodejsの実行内容と比べながら進めました。結果的に動けましたので、それ以上いう内容はございません(^_-)-☆。
    ```java
     public String generateRandomTag(){
@@ -171,7 +171,7 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
     }
    ```
    
-3. Rest APIリクエストの実装（できるだけ小さいサイズにしたいため、サードパーティJar利用せず）
+- Rest APIリクエストの実装（できるだけ小さいサイズにしたいため、サードパーティJar利用せず）
    これは多くの人が調べればかけるもので、一応ソリューションとして記載します。generateRandomTagや、Historyなどの値設定方法を示します。
    ```java
     private int executeCmd(String cmdStr) {
@@ -211,7 +211,7 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
    ```
 
 
-4. その他Android／HarmonyOS実装で、UI Threadとのやり取りの非同期実装
+- その他Android／HarmonyOS実装で、UI Threadとのやり取りの非同期実装
    AndroidやHarmonyOSで一番困るのはUI Threadと時間がかかるネットワーク処理の同期・非同期処理です。自分の初心者ですが、下記は自分的の答えです。同期Executeと非同期Executeを両方用意し、非同期の場合、Callbackを用意しています。同期処理はメインThreadでTimeout待機し、WebAPIの応答コードを返すことです。   
    ```java
     public class SesameCmd implements Runnable, Callback {
@@ -268,11 +268,11 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
    ```
 
 ## 結局Appで何を実現したか…
-1. QRコードをスキャンして、直接すべての情報を保存します。
-2. APIKeyは独自で取得し、入力してテストする機能、テストで成功すると、自動的に保存されます。
-3. アンロック・ロック操作すると、結果画面が表示され、3秒後自動的にApp終了します。
-4. ランチャーアイコンで入ると、設定画面、NFCで起動する場合設備情報が十分であれば、スマートロック動作させる、でなければ設定画面へ
-5. 設定完了後、NFC TagWriter by NXPでApp起動Tag書き込みで、com.giko.sesamenfcを書き込めば、NFCTag作成完了。このTagで動作させることが可能です。
+- QRコードをスキャンして、直接すべての情報を保存します。
+- APIKeyは独自で取得し、入力してテストする機能、テストで成功すると、自動的に保存されます。
+- アンロック・ロック操作すると、結果画面が表示され、3秒後自動的にApp終了します。
+- ランチャーアイコンで入ると、設定画面、NFCで起動する場合設備情報が十分であれば、スマートロック動作させる、でなければ設定画面へ
+- 設定完了後、NFC TagWriter by NXPでApp起動Tag書き込みで、com.giko.sesamenfcを書き込めば、NFCTag作成完了。このTagで動作させることが可能です。
 
 ![picture](https://yougikou.github.io/img/post/2021-10-31-SesameSmartlockCustomSolution_1.jpg)
 
