@@ -11,6 +11,7 @@ tags:
   - セサミスマートロック
   - セサミ３
   - Sesame 3
+  - Sesame Web API
   - スマートロック
   - HarmonyOS
   - Sesame RESTful webAPI
@@ -282,8 +283,9 @@ NFCタグを試したところ、さらにがっかりしました。Appをオ�
 全量ソースは下記に公開しています。利用するオープンソースはあるが、みんなGoogleなど実績があるものになります。
 https://github.com/yougikou/NFC4Sesame  
 
-少し残念ですが、自分はMate30Proを使っているので、HarmonyOSの開発試しで、このAppを作成しました。
-Androidで直接動作できないが、Javaサンプルがあれば、組み込みは簡単だと思います。  
+2021/11/06 Harmoney OSはIOSのような仕組みで、NativeのHarmonyOSのAPPの自由配布ができません。そのため、Android版を作り直しました。
+https://github.com/yougikou/QuickSesame
+
 これがあれば、Androidのスマートウォッチや、HarmonyOSの軽量スマートウォッチ（GT2 Proなど）でも操作可能になります。
 （次にチャレンジしてみます）
 
