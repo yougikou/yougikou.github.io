@@ -15,8 +15,8 @@ tags:
 
 ## 测试页面
 
+[单独画面显示](https://yougikou.github.io/onepageapps/ariang.html){:target="_blank"}
 <iframe
   src="https://yougikou.github.io/onepageapps/ariang.html"
-  width="100%" height="300" 
-  style="border:none;"
+  style="border:none;width:100%; height:800px;"
 ></iframe>
