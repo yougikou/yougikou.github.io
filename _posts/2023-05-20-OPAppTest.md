@@ -13,7 +13,8 @@ tags:
   - 工具
 ---
 
-## 测试页面
+## 测试页面 - AriaNg客户端
+由于浏览器安全限制，https协议加载页面（Github Page）无法加载http协议。其他OnePageApps也会有同样限制。
 
 [单独画面显示](https://yougikou.github.io/onepageapps/ariang.html){:target="_blank"}
 <iframe
