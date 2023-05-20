@@ -16,6 +16,7 @@ tags:
 ## 测试页面
 
 <iframe
-  src="https://www.yahoo.co.jp"
-  style="width:100%; height:100%;"
+  src="https://yougikou.github.io/onepageapps/ariang.html"
+  width="100%" height="300" 
+  style="border:none;"
 ></iframe>
