@@ -1,101 +1,95 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-  <meta name="robots" content="index, follow">
-  <!-- title -->
-  
-    
-  <title>Windows 10 - Giko Blog</title>
-    
-  
-  
-  <!-- open graph -->
-  <meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giko Blog">
-<meta property="og:url" content="https://yougikou.github.io/tags/Windows-10/index.html">
-<meta property="og:site_name" content="Giko Blog">
-<meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="William Young">
-<meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,">
-<meta name="twitter:card" content="summary">
-  <!-- canonical -->
-  
-  <link rel="canonical" href="https://yougikou.github.io/tags/Windows-10/">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <!-- CSS -->
-  
-<link rel="stylesheet" href="/css/reset.css">
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><title>标签: Windows 10 - Giko Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Giko Blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Giko Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:type" content="website"><meta property="og:title" content="Giko Blog"><meta property="og:url" content="https://yougikou.github.io/"><meta property="og:site_name" content="Giko Blog"><meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://yougikou.github.io/img/og_image.png"><meta property="article:author" content="William Young"><meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yougikou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://yougikou.github.io"},"headline":"Giko Blog","image":["https://yougikou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Young"},"publisher":{"@type":"Organization","name":"Giko Blog","logo":{"@type":"ImageObject"}},"description":"个人笔记, 散记 | Giko, tech enthusiast, Architect"}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/markdown.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-<link rel="stylesheet" href="/css/fonts.css">
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Giko Blog</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">Windows 10</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-05-30T03:00:00.000Z" title="2020/5/30 12:00:00">2020-05-30</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:16:45.320Z" title="2024/1/2 21:16:45">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/05/30/SlowInternetInWin10/">坑人的Windows 10上网限速/带宽变慢问题</a></p><div class="content"><h3 id="缓慢的网速"><a href="#缓慢的网速" class="headerlink" title="缓慢的网速"></a>缓慢的网速</h3><p>通常上网速度缓慢我都会归咎于我的垃圾网络供应商以及住宅的设备限制，只能上一般的百兆光缆，而且一到晚上上网高峰时段就会出现龟速。<br>但是理性思考一下我会考虑一下几点:</p>
+<ol>
+<li>供应商地区通信高峰（想象）</li>
+<li>同时段使用高峰（想象）</li>
+<li>路由器过热导致通信不畅通（想象）</li>
+<li>线材不好或者WIFI中有干扰（想象）</li>
+</ol>
+<p>但是我万万没有想到，Windows系统会在一定的条件下出现限制网速的情况。<br>(…通常一个坑，是通过很长时间难以解开的心结来让人坚持爬出来的)</p>
+<p>我买了台Nvidia的Shield TV 2019<br><img src="/2020/05/30/SlowInternetInWin10/2020-05-30-SlowInternetInWin10_1.jpg" alt="picture"></p>
+<p>虽然我主要为了4K，而不是游戏，但是终究忍不住传说中的串流（Stream），特别是我免费获取了GTA5之后。<br>于是</p>
+<ol>
+<li>串流主机配置 - OK！（Lenovo Game PC）</li>
+<li>速度测试 - OK！</li>
+<li>游戏安装 - OK！</li>
+<li>串流开始！…… 图像开始变渣……网络过慢，断线！！！</li>
+</ol>
+<p>啊！！！啊！！！<br><img src="/2020/05/30/SlowInternetInWin10/2020-05-30-SlowInternetInWin10_2.jpg" alt="picture"></p>
+<p>过后持续一两周，每次抱着侥幸心理打开来试一试，看看会不会突然顺畅了。<br>每次都是徒劳。直到一个周末…<br>（由于我的家用游戏电脑使用率不是很高，对于网速这点其实并不敏感）。  </p>
+<p>我一大早打开个网页…好慢…  </p>
+<p>Netflix测速功能…5-10Mbps…  </p>
+<p>是不是疫情期间大家都在家，网速慢了（惯性思维）。  </p>
+<p>闲来无事，打开路由器页面看看IPv6连接信息有没有变化  </p>
+<p>…路由器页面…好慢…  </p>
+<p>嗯…用路由器测速功能测一下吧  </p>
+<p>…80-85Mbps…哈？  </p>
+<h1 id="我的这台机器慢！！？"><a href="#我的这台机器慢！！？" class="headerlink" title="我的这台机器慢！！？"></a>我的这台机器慢！！？</h1><p>第一次失败尝试：<br>由于是单机原因，首先管理员执行  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh winsock reset</span><br></pre></td></tr></table></figure>
 
-<meta name="generator" content="Hexo 7.0.0"></head>
-
-    <body>
-        <div class="paper">
-            <div class="paper-main">
-                
-                    <div class="header">
-    <a class="logo" href="/">Giko Blog</a>
-    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
-    <ul class="nav">
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/archives">Archives</a></li>
-        
-    </ul>
-</div>
-
-                
-                <div class="archive-list">
-    <ul class="archive">
-        
-        <li>
-            <span class="archive-date">2020.05.30</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2020/05/30/SlowInternetInWin10/">坑人的Windows 10上网限速/带宽变慢问题</a>
-                <!-- <a class="read-more" href="/2020/05/30/SlowInternetInWin10/"> ... </a> -->
-            </div>
-        </li>
-        
-    </ul>
-</div>
-
-                <div class="footer">
-    <span>Copyright © 2023 Giko Blog</span>
-    <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> with <a target="_blank" rel="noopener" href="https:///imzl.com/zenmind">ZenMind</a></span>
-</div>
-
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
-
-
-<script src="/js/highlight.min.js"></script>
-
-
-<script src="/js/highlightjs-line-numbers.js"></script>
-
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-
-            </div>
-        </div>
-    </body>
-</html>
+<p>Netflix测速 - 80Mbps复活<br>那我的Nvidia Stream也有戏了吧。马上测试!</p>
+<ol>
+<li>速度测试 - OK！</li>
+<li>串流开始！…… 图像开始变渣……网络过慢，断线！！！</li>
+</ol>
+<p>嗯…不开游戏…80Mbps<br>开游戏…10Mbps<br>不开游戏…80Mbps<br>开游戏…10Mbps  </p>
+<p>啊！！！啊！！！肿莫回事！！！<br><img src="/2020/05/30/SlowInternetInWin10/2020-05-30-SlowInternetInWin10_2.jpg" alt="picture"></p>
+<p>敢情一开始的网速过慢是哪次关游戏的时候机器没有缓过气来？…<br>还有这种狗血原因！</p>
+<h3 id="查资料-四处Google解决方案"><a href="#查资料-四处Google解决方案" class="headerlink" title="查资料 - 四处Google解决方案"></a>查资料 - 四处Google解决方案</h3><p>由于这类信息乱七八糟的太多，避开曲折不谈。直击重点Win10网速,解除限速步骤：</p>
+<ol>
+<li>按 Win + R 组合键，打开运行，并输入：gpedit.msc 命令，确定或回车，打开本地组策略编辑器</li>
+<li>本地组策略编辑器窗口中，依次展开：计算机配置 - Windows 设置，然后在右侧找到并右键点击基于策略的 QoS，在打开的菜单项中选择高级 QoS 设置</li>
+<li>高级 QoS 设置窗口，切换到入站 TCP 流量，勾选指定入站 TCP 吞吐量级别，并选择级别3(最大吞吐量)，最后点击确定</li>
+<li>重新返回到本地组策略编辑器窗口中，依次展开：计算机配置 - 管理模板 - 网络，然后在右侧找到并双击打开QoS 数据被计划程序</li>
+<li>接着在Qos数据包计划程序下找到并且双击打开限制可保留带宽</li>
+<li>限制可保留带宽，并将下方选项的带宽限制修改为0，并确定保存</li>
+</ol>
+<h3 id="重新测试Nvidia-Stream"><a href="#重新测试Nvidia-Stream" class="headerlink" title="重新测试Nvidia Stream"></a>重新测试Nvidia Stream</h3><p>Netflix测速 - 80Mbps复活！！</p>
+<p>Nvidia Stream测试 - 复活！！！开游戏网速也不会变慢了。<br>这下又再次坚定了我购买蓝牙手柄的决心。虽然可能积灰的时间比较多。</p>
+<p><img src="/2020/05/30/SlowInternetInWin10/2020-05-30-SlowInternetInWin10_3.jpg" alt="picture"></p>
+<p><del>网络上写解决方案的作者也说 - 不知道是不是有用，但是很可能会变快。</del>  </p>
+<p><del>而这次经历再次证明，人们总以为自己掌握了一切，但是其实却一无所知。</del>  </p>
+<p><del>保持一颗虚心求学的心，自始至终都是如此重要。</del></p>
+<hr>
+<h3 id="重装Windows后追加-最终对于这个问题的终结"><a href="#重装Windows后追加-最终对于这个问题的终结" class="headerlink" title="重装Windows后追加: 最终对于这个问题的终结"></a>重装Windows后追加: 最终对于这个问题的终结</h3><p>在过后几次的使用中，最终这个问题会不断复发。<br>原因是大多数游戏平台客户端（EpicGame，Battle.net）在游戏下载时都会进行限速，<br>这在动辄100GB的游戏，下载速度8MB-10MB&#x2F;s的情况下，也情有可原。<br>但是不知道什么原因，本来下载安装游戏时的系统策略会在玩游戏的时候也产生影响，<br>造成了非常悲剧的结果。  </p>
+<p>万般无奈之下刚好Windows进行了2020 May更新，从云端纯净重置系统变得很简单。<br>在30分钟的重装完成，1小时左右的环境设置后，再进行多次尝试，总算是恢复正常。  </p>
+<p>总结一下：<br>上述命令以及策略修改的确是会产生一定效果。但是如果根本原因没有找到。<br>估计大多数情况下还是会复发。而重装也证明正常情况下系统设置是不需要用户干预的。<br>所以平时尽量把资料保存在不同盘符，日常处理也尽量使用云服务。<br>这样在万一的时候可以轻松重装系统，是百试百灵的良药。  </p>
+<hr>
+</div></article></div></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Giko Blog</a><p class="is-size-7"><span>&copy; 2024 William Young</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

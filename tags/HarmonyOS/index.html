@@ -1,101 +1,119 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-  <meta name="robots" content="index, follow">
-  <!-- title -->
-  
-    
-  <title>HarmonyOS - Giko Blog</title>
-    
-  
-  
-  <!-- open graph -->
-  <meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giko Blog">
-<meta property="og:url" content="https://yougikou.github.io/tags/HarmonyOS/index.html">
-<meta property="og:site_name" content="Giko Blog">
-<meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="William Young">
-<meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,">
-<meta name="twitter:card" content="summary">
-  <!-- canonical -->
-  
-  <link rel="canonical" href="https://yougikou.github.io/tags/HarmonyOS/">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <!-- CSS -->
-  
-<link rel="stylesheet" href="/css/reset.css">
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><title>标签: HarmonyOS - Giko Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Giko Blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Giko Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:type" content="website"><meta property="og:title" content="Giko Blog"><meta property="og:url" content="https://yougikou.github.io/"><meta property="og:site_name" content="Giko Blog"><meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://yougikou.github.io/img/og_image.png"><meta property="article:author" content="William Young"><meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yougikou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://yougikou.github.io"},"headline":"Giko Blog","image":["https://yougikou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Young"},"publisher":{"@type":"Organization","name":"Giko Blog","logo":{"@type":"ImageObject"}},"description":"个人笔记, 散记 | Giko, tech enthusiast, Architect"}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/markdown.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-<link rel="stylesheet" href="/css/fonts.css">
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Giko Blog</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">HarmonyOS</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-10-31T03:00:00.000Z" title="2021/10/31 12:00:00">2021-10-31</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:18:51.282Z" title="2024/1/2 21:18:51">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/10/31/SesameSmartlockCustomSolution/">Sesame3スマートロック - もっと簡単にロック解除</a></p><div class="content"><h2 id="セサミ-というスマートロック"><a href="#セサミ-というスマートロック" class="headerlink" title="セサミ というスマートロック"></a>セサミ というスマートロック</h2><p>本文はなぜ日本語で書くのは一つ主な原因はSesame3は主に日本と台湾で発売されてます。とても安価で使いやすいスマートロックです。<br>私は初代セサミスマートロックから使い始め、なぜセサミを選んだのは  </p>
+<ul>
+<li>日本の電気錠もあるが、スマートではない</li>
+<li>日本のスマートロックは高値で、月課金のものもあった。あり得ない</li>
+<li>マンションお住まいのため、統一されたドアの筐体とロックの制限があった。</li>
+<li>日本のGoldやMiwaのロックはなかなか欧米のスマートロックが対応されていない</li>
+</ul>
+<p>その時セサミが現れました。良い商品です。初代は操作が競合したりなどの不便があったが、普通のロックに自動ロック機能や、リモートロックなどできるのは相当便利です。特に子供鍵忘れや、おばあちゃんが来るとき鍵忘れの時何回も活用しました。後やはり年が取るとドアがロックしたかしていないか。出かけた後結構悩む時があるので、これがあるとリモートでドア状態確認可能になりました。</p>
+<p>最近セサミ3を購入し、アンロックスピードが早くなり、さらに快適です。</p>
+<h2 id="セサミ-WebAPIとは"><a href="#セサミ-WebAPIとは" class="headerlink" title="セサミ WebAPIとは"></a>セサミ WebAPIとは</h2><p>初代セサミ時代からWifiモジュールが販売されて、WebAPIを利用して、ロック・アンロック可能です。いろいろ面白いインテグレーションが可能です。Googleアシスタントや、Siriを便利に使えました。</p>
+<p>しかし、セサミ3が発売されたとともに、初代のDashboardが使えなく、初代のWebAPIも使えません。新しいAPIとなりました。またセキュリティ向上されている可能性があり、WebAPIの利用が元のような単純なものではなく、一定の暗号化処理が必要になってきました。</p>
+<h2 id="セサミAndroid-Appの問題"><a href="#セサミAndroid-Appの問題" class="headerlink" title="セサミAndroid Appの問題"></a>セサミAndroid Appの問題</h2><p>（最近自分がメインにAndroidで運用していて、IOSのことあまり気にしていませんが…）</p>
+<p>セサミ3のAndroid Appを利用していますが、自動アンロック機能がずっと通知欄にWidgetがでばなしです。バックグラウンドで位置サービス監視が必要という裏原因も理解しますが、やはり気に入らなく、NFCタグを試しました。</p>
+<p>NFCタグを試したところ、さらにがっかりしました。Appをオープンしないと、開錠できません。<br>しかも単にあるタグの標識を記録するだけで、Appが閉じたままでタグをスキャンすると、まずシステムでApp起動の選択になります。<br>自分でちょっと工夫して、NFC TagWriter by NXPを利用して、NFCTagでAppを起動するようにしたら、実際操作して見たところ、2回のスキャンが必要で、間隔時間が必要です。（さらにイライラ…）</p>
+<h2 id="どうすれば一回のタッチで開錠できるでしょう"><a href="#どうすれば一回のタッチで開錠できるでしょう" class="headerlink" title="どうすれば一回のタッチで開錠できるでしょう"></a>どうすれば一回のタッチで開錠できるでしょう</h2><h3 id="理想論：スマホの状態が問わず、1回スキャンしただけで、開錠する"><a href="#理想論：スマホの状態が問わず、1回スキャンしただけで、開錠する" class="headerlink" title="理想論：スマホの状態が問わず、1回スキャンしただけで、開錠する"></a>理想論：スマホの状態が問わず、1回スキャンしただけで、開錠する</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>アプローチ</th>
+<th>メリット</th>
+<th>デメリット</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>AppでWebAPIを利用して開錠操作する</td>
+<td>開発簡単、仕組みシンプル</td>
+<td>Wifiモジュールが必要、スマホアンロック操作が必要</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AppでSesameSDKを利用して開錠操作する</td>
+<td>Wifiモジュールが不要、仕組みシンプル</td>
+<td>開発難しい、スマホアンロック操作が必要</td>
+</tr>
+<tr>
+<td>3</td>
+<td>スマホのNFCシミュレーター機能で、NFCTagをシミュレーションし、カードリーダー＋専用サーバで開錠操作する</td>
+<td>スマホロックしたままで使える、自分の暗号化内容をTagに仕込めば、簡単にNFCTagを複数作り出し、子供に配布可能、公式サンプルソースをそのまま利用可能</td>
+<td>カードリーダーを動作させるおよびWebAPI機器が必要、ドアに設置する工夫が必要(電源どうするなど)</td>
+</tr>
+</tbody></table>
+<p>#3のドアに機器の増設を考えるだけで頭いっぱいです。このオプションは本当にセサミの製造会社に考えてほしいです。スマートロックと同様、バッテリー1年持つのカードリーダー＋Wifiモジュールでできるではないかと思います。（今スマホAppのNFC機能は本当に微妙、特にAndroidのAppがいまいちです。ISOは直接開錠操作するショートカットがあるので、まだ良いかも）</p>
+<p>自分の条件に合わせて、やはり#1のは一番現実的です。</p>
+<h3 id="現実論：スマホアンロック状態で、1回スキャンしただけで、開錠する"><a href="#現実論：スマホアンロック状態で、1回スキャンしただけで、開錠する" class="headerlink" title="現実論：スマホアンロック状態で、1回スキャンしただけで、開錠する"></a>現実論：スマホアンロック状態で、1回スキャンしただけで、開錠する</h3><p>これをよく考えると、AppのNFC機能不要ではないか、WebAPI機能を持てば、NFCTagによる起動か、ランチャーアイコンによる起動か区別できれば、NFCTag起動時WebAPIを実行すればよいです。</p>
+<h2 id="では、開発：WebAPIをJavaで利用するの難点"><a href="#では、開発：WebAPIをJavaで利用するの難点" class="headerlink" title="では、開発：WebAPIをJavaで利用するの難点"></a>では、開発：WebAPIをJavaで利用するの難点</h2><h3 id="参考文献→ブログ"><a href="#参考文献→ブログ" class="headerlink" title="参考文献→ブログ"></a>参考文献→ブログ</h3><ul>
+<li>公式：<a target="_blank" rel="noopener" href="https://doc.candyhouse.co/ja/SesameAPI">https://doc.candyhouse.co/ja/SesameAPI</a></li>
+<li><a target="_blank" rel="noopener" href="https://zenn.dev/key3/articles/6c1c2841d7a8a2">https://zenn.dev/key3/articles/6c1c2841d7a8a2</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mochipon/sesame-qr-reader/blob/main/pages/index.vue#L56-L137">https://github.com/mochipon/sesame-qr-reader/blob/main/pages/index.vue#L56-L137</a></li>
+</ul>
+<h3 id="文献で書いたものを重複せず、実際あった問題と解決コードを載せる"><a href="#文献で書いたものを重複せず、実際あった問題と解決コードを載せる" class="headerlink" title="文献で書いたものを重複せず、実際あった問題と解決コードを載せる"></a>文献で書いたものを重複せず、実際あった問題と解決コードを載せる</h3><ul>
+<li><p>Nodejsではなく、Javaの場合、URLDecodeがとても重要です。最初はこちらに嵌めて、Base64のデコードがうまくいかず…<br> 下のscanStrは文献・ブログに記載があったSesameの共有QRコードからスキャンした文字列です。<br> 下記コードはQRコードから読み取った情報（設備名、UUID、秘密キーを含めて）を解読しました。<br> そのため、私のコードを利用する際、秘密キーを気にする必要がなく、QRコード情報＋APIKeyでOKです。</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">()</span> &#123;</span><br><span class="line">    String[] paramParts = getParamParts(<span class="built_in">this</span>.scanStr);</span><br><span class="line">    HashMap&lt;String, String&gt; paramMap = getParamMap(paramParts);</span><br><span class="line">    <span class="built_in">this</span>.dataType = paramMap.get(<span class="string">&quot;t&quot;</span>);</span><br><span class="line">    <span class="built_in">this</span>.permission = paramMap.get(<span class="string">&quot;l&quot;</span>);</span><br><span class="line">    <span class="built_in">this</span>.name = paramMap.get(<span class="string">&quot;n&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">sk</span> <span class="operator">=</span> paramMap.get(<span class="string">&quot;sk&quot;</span>);</span><br><span class="line">    <span class="type">byte</span>[] skBytes = Base64.getDecoder().decode(sk);</span><br><span class="line">    <span class="built_in">this</span>.deviceType = bytesToHex(Arrays.copyOfRange(skBytes, <span class="number">0</span>,<span class="number">1</span>));</span><br><span class="line">    <span class="built_in">this</span>.secretKey = bytesToHex(Arrays.copyOfRange(skBytes, <span class="number">1</span>,<span class="number">17</span>));</span><br><span class="line">    <span class="built_in">this</span>.publicKey = bytesToHex(Arrays.copyOfRange(skBytes, <span class="number">17</span>,<span class="number">81</span>));</span><br><span class="line">    <span class="built_in">this</span>.keyIndex = bytesToHex(Arrays.copyOfRange(skBytes, <span class="number">81</span>,<span class="number">83</span>));</span><br><span class="line">    <span class="built_in">this</span>.uuid = bytesToHex(Arrays.copyOfRange(skBytes, <span class="number">83</span>,<span class="number">99</span>));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> HashMap&lt;String, String&gt; <span class="title function_">getParamMap</span><span class="params">(String[] paramParts)</span> &#123;</span><br><span class="line">    HashMap&lt;String, String&gt; paramMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (String paramPart : paramParts) &#123;</span><br><span class="line">        String[] keyVal = paramPart.split(<span class="string">&quot;=&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (keyVal.length != <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;QR code information is not correct!&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        paramMap.put(keyVal[<span class="number">0</span>], keyVal[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> paramMap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> String[] getParamParts(String uri) &#123;</span><br><span class="line">    String[] uriParts = uri.split(<span class="string">&quot;\\?&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (uriParts.length &lt; <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;QR code uri information is not correct!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">paramUrl</span> <span class="operator">=</span> java.net.URLDecoder.decode(uriParts[<span class="number">1</span>], StandardCharsets.UTF_8.name());</span><br><span class="line">        <span class="keyword">return</span> paramUrl.split(<span class="string">&quot;&amp;&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (UnsupportedEncodingException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;QR code uri information is not correct!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> String <span class="title function_">bytesToHex</span><span class="params">(<span class="type">byte</span>[] bytes)</span> &#123;</span><br><span class="line">    <span class="type">char</span>[] hexChars = <span class="keyword">new</span> <span class="title class_">char</span>[bytes.length * <span class="number">2</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; bytes.length; j++) &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">v</span> <span class="operator">=</span> bytes[j] &amp; <span class="number">0xFF</span>;</span><br><span class="line">        hexChars[j * <span class="number">2</span>] = HEX_ARRAY[v &gt;&gt;&gt; <span class="number">4</span>];</span><br><span class="line">        hexChars[j * <span class="number">2</span> + <span class="number">1</span>] = HEX_ARRAY[v &amp; <span class="number">0x0F</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(hexChars);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>generateRandomTagのロジックのJava書き換え：正確にByte切り出し部分の理解とCMAC暗号化の実装<br> ここは難しいから、一々Nodejsの実行内容をデバッグで比べながら進めました。結果的に動けましたので、それ以上語る内容はございません(^_-)-☆。</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">generateRandomTag</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="comment">// 1. timestamp  (SECONDS SINCE JAN 01 1970. (UTC))  // 1621854456905</span></span><br><span class="line">    <span class="type">long</span> <span class="variable">timestamp</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Date</span>().getTime() / <span class="number">1000</span>;</span><br><span class="line">    <span class="comment">// 2. timestamp to uint32  (little endian)   //f888ab60</span></span><br><span class="line">    <span class="type">ByteBuffer</span> <span class="variable">buffer</span> <span class="operator">=</span> ByteBuffer.allocate(<span class="number">8</span>);</span><br><span class="line">    buffer.order(ByteOrder.LITTLE_ENDIAN);</span><br><span class="line">    buffer.putLong(timestamp);</span><br><span class="line">    <span class="comment">// 3. remove most-significant byte    //0x88ab60</span></span><br><span class="line">    <span class="type">byte</span>[] message = Arrays.copyOfRange(buffer.array(), <span class="number">1</span>,<span class="number">4</span>);</span><br><span class="line">    <span class="keyword">return</span> getCMAC(parseHexStr2Byte(secretKey), message).replace(<span class="string">&quot; &quot;</span>,<span class="string">&quot;&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="type">byte</span>[] parseHexStr2Byte(String hexStr) &#123;</span><br><span class="line">    <span class="keyword">if</span> (hexStr.length() &lt; <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    <span class="type">byte</span>[] result = <span class="keyword">new</span> <span class="title class_">byte</span>[hexStr.length()/<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; hexStr.length()/<span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">high</span> <span class="operator">=</span> Integer.parseInt(hexStr.substring(i*<span class="number">2</span>, i*<span class="number">2</span>+<span class="number">1</span>), <span class="number">16</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">low</span> <span class="operator">=</span> Integer.parseInt(hexStr.substring(i*<span class="number">2</span>+<span class="number">1</span>, i*<span class="number">2</span>+<span class="number">2</span>), <span class="number">16</span>);</span><br><span class="line">        result[i] = (<span class="type">byte</span>)(high * <span class="number">16</span> + low);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">getCMAC</span><span class="params">(<span class="type">byte</span>[] secretKey, <span class="type">byte</span>[] msg)</span> &#123;</span><br><span class="line">    <span class="type">CipherParameters</span> <span class="variable">params</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KeyParameter</span>(secretKey);</span><br><span class="line">    <span class="type">BlockCipher</span> <span class="variable">aes</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">AESEngine</span>();</span><br><span class="line">    <span class="type">CMac</span> <span class="variable">mac</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CMac</span>(aes);</span><br><span class="line">    mac.init(params);</span><br><span class="line">    mac.update(msg, <span class="number">0</span>, msg.length);</span><br><span class="line">    <span class="type">byte</span>[] out = <span class="keyword">new</span> <span class="title class_">byte</span>[mac.getMacSize()];</span><br><span class="line">    mac.doFinal(out, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">StringBuilder</span> <span class="variable">s19</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">byte</span> b : out) &#123;</span><br><span class="line">        s19.append(String.format(<span class="string">&quot;%02X &quot;</span>, b));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> s19.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Rest APIリクエストの実装（できるだけ小さいAppサイズにしたいため、サードパーティJar利用せず）<br> これは多くの人が調べればかけるもので、一応ソリューションとして記載します。generateRandomTagや、Historyなどの値設定方法を示します。</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="type">int</span> <span class="title function_">executeCmd</span><span class="params">(String cmdStr)</span> &#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">base64History</span> <span class="operator">=</span> Base64.getEncoder().encodeToString(<span class="string">&quot;NFC Unlock&quot;</span>.getBytes());</span><br><span class="line">    <span class="type">String</span> <span class="variable">sign</span> <span class="operator">=</span> generateRandomTag();</span><br><span class="line">    <span class="type">String</span> <span class="variable">json</span> <span class="operator">=</span> String.format(<span class="string">&quot;&#123;\&quot;cmd\&quot;: \&quot;%s\&quot;, \&quot;history\&quot;: \&quot;%s\&quot;,\&quot;sign\&quot;: \&quot;%s\&quot;&#125;&quot;</span>, cmdStr, base64History, sign);</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">&quot;https://app.candyhouse.co/api/sesame2/&quot;</span> + <span class="built_in">this</span>.deviceId + <span class="string">&quot;/cmd&quot;</span>);</span><br><span class="line">        <span class="type">HttpURLConnection</span> <span class="variable">con</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">        con.setRequestMethod(<span class="string">&quot;POST&quot;</span>);</span><br><span class="line">        con.setRequestProperty(<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;application/json; utf-8&quot;</span>);</span><br><span class="line">        con.setRequestProperty(<span class="string">&quot;x-api-key&quot;</span>, apiKey);</span><br><span class="line">        con.setDoOutput(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">        <span class="type">OutputStream</span> <span class="variable">os</span> <span class="operator">=</span> con.getOutputStream();</span><br><span class="line">        <span class="type">byte</span>[] input = json.getBytes(<span class="string">&quot;utf-8&quot;</span>);</span><br><span class="line">        os.write(input, <span class="number">0</span>, input.length);</span><br><span class="line">        os.close();</span><br><span class="line"></span><br><span class="line">        <span class="type">BufferedReader</span> <span class="variable">br</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(con.getInputStream(), <span class="string">&quot;utf-8&quot;</span>));</span><br><span class="line">        <span class="type">StringBuilder</span> <span class="variable">response</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="type">String</span> <span class="variable">responseLine</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">while</span> ((responseLine = br.readLine()) != <span class="literal">null</span>) &#123;</span><br><span class="line">            response.append(responseLine.trim());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(response.toString());</span><br><span class="line">        br.close();</span><br><span class="line">        <span class="type">int</span> <span class="variable">code</span> <span class="operator">=</span> con.getResponseCode();</span><br><span class="line">        con.disconnect();</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">        <span class="keyword">return</span> <span class="number">400</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<meta name="generator" content="Hexo 7.0.0"></head>
-
-    <body>
-        <div class="paper">
-            <div class="paper-main">
-                
-                    <div class="header">
-    <a class="logo" href="/">Giko Blog</a>
-    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
-    <ul class="nav">
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/archives">Archives</a></li>
-        
-    </ul>
-</div>
-
-                
-                <div class="archive-list">
-    <ul class="archive">
-        
-        <li>
-            <span class="archive-date">2021.10.31</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2021/10/31/SesameSmartlockCustomSolution/">Sesame3スマートロック - もっと簡単にロック解除</a>
-                <!-- <a class="read-more" href="/2021/10/31/SesameSmartlockCustomSolution/"> ... </a> -->
-            </div>
-        </li>
-        
-    </ul>
-</div>
-
-                <div class="footer">
-    <span>Copyright © 2023 Giko Blog</span>
-    <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> with <a target="_blank" rel="noopener" href="https:///imzl.com/zenmind">ZenMind</a></span>
-</div>
-
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
-
-
-<script src="/js/highlight.min.js"></script>
-
-
-<script src="/js/highlightjs-line-numbers.js"></script>
-
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-
-            </div>
-        </div>
-    </body>
-</html>
+</li>
+<li><p>その他：Android／HarmonyOS実装で、UI Threadとのやり取りの非同期実装<br> UI Threadと時間がかかるネットワーク処理の同期・非同期処理が一番理解に時間が掛かりました。自分は初心者ですが、下記は自分的の答えです。同期Executeと非同期Executeを両方用意し、非同期の場合、Callbackを用意しています。同期処理はメインThreadでTimeout待機し、WebAPIの応答コードを返すことです。   </p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SesameCmd</span> <span class="keyword">implements</span> <span class="title class_">Runnable</span>, Callback &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SesameCmd</span><span class="params">(</span></span><br><span class="line"><span class="params">            QRCodeInfo info,</span></span><br><span class="line"><span class="params">            String apiKey,</span></span><br><span class="line"><span class="params">            String cmd)</span> &#123;...&#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">run</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">code</span> <span class="operator">=</span> executeCmd(cmd);</span><br><span class="line">        <span class="keyword">if</span> (c != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="built_in">this</span>.c.callback(code);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">executeCmdAsynchronously</span><span class="params">(Callback c)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.c = c;</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Thread</span>(<span class="built_in">this</span>).start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">executeCmdSynchronously</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.c = <span class="built_in">this</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">timeout</span> <span class="operator">=</span> <span class="number">100000</span>;</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Thread</span>(<span class="built_in">this</span>).start();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (responseCode == <span class="number">0</span> &amp;&amp; timeout &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">                timeout = timeout - <span class="number">1000</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> responseCode;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> responseCode;</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="built_in">this</span>.c = <span class="literal">null</span>;</span><br><span class="line">            <span class="built_in">this</span>.responseCode = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">callback</span><span class="params">(<span class="type">int</span> code)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.responseCode = code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> <span class="title function_">executeCmd</span><span class="params">(String cmdStr)</span> &#123;...&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">generateRandomTag</span><span class="params">()</span>&#123;...&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="type">byte</span>[] parseHexStr2Byte(String hexStr) &#123;...&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getCMAC</span><span class="params">(<span class="type">byte</span>[] secretKey, <span class="type">byte</span>[] msg)</span> &#123;...&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="結局Appで何を実現したか…"><a href="#結局Appで何を実現したか…" class="headerlink" title="結局Appで何を実現したか…"></a>結局Appで何を実現したか…</h2><ul>
+<li>QRコードをスキャンして、直接すべての情報を保存します。</li>
+<li>APIKeyはユーザご自身で取得し、入力してテストする機能、テストで成功すると、自動的に保存されます。</li>
+<li>アンロック・ロック操作すると、結果画面が表示され、2秒後自動的にApp終了します。</li>
+<li>ランチャーアイコンで入ると、設定画面、NFCで起動する場合設備情報が十分であれば、スマートロック動作させる、でなければ設定画面へ</li>
+<li>設定完了後、NFC TagWriter by NXPでApp起動Tag書き込みで、com.giko.sesamenfcを書き込めば、NFCTag作成完了。このTagで動作させることが可能です。</li>
+</ul>
+<p><img src="/2021/10/31/SesameSmartlockCustomSolution/2021-10-31-SesameSmartlockCustomSolution_1.jpg" alt="picture"></p>
+<p>一応QRコードがある＋APIKeyがある前提のため、セキュリティ的にAppは一般ユーザでも使える状態になります。<br>また裏で変な情報別のサーバに送信しているかいないか怪しい疑われるかものため、<br>全量ソースは下記に公開しています。利用するオープンソースはあるが、みんなGoogleなど実績があるものになります。<br><a target="_blank" rel="noopener" href="https://github.com/yougikou/NFC4Sesame">https://github.com/yougikou/NFC4Sesame</a>  </p>
+<p>2021&#x2F;11&#x2F;06 Harmoney OSはIOSのような仕組みで、NativeのHarmonyOSのAPPの自由配布ができません。そのため、Android版を作り直しました。<br><a target="_blank" rel="noopener" href="https://github.com/yougikou/QuickSesame">https://github.com/yougikou/QuickSesame</a></p>
+<p>これがあれば、Androidのスマートウォッチや、HarmonyOSの軽量スマートウォッチ（GT2 Proなど）でも操作可能になります。<br>（次にチャレンジしてみます）</p>
+<h2 id="動作してみるイメージは下記のようです。"><a href="#動作してみるイメージは下記のようです。" class="headerlink" title="動作してみるイメージは下記のようです。"></a>動作してみるイメージは下記のようです。</h2><p>2回スキャンのイライラ感が軽減ですます。</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=zqYlZ_rHLwM"><img src="https://img.youtube.com/vi/zqYlZ_rHLwM/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+<p>著者権を気にしていて、アイコンも自分で作りました。</p>
+<h2 id="まとめ"><a href="#まとめ" class="headerlink" title="まとめ"></a>まとめ</h2><p>セサミのAppにも上記アドバイスをしましたが、うまく解決してくれるかどうか微妙です。<br>日本はやはりiPhone大軍がメジャーかも。<br>でもこのぐらいの努力で、Androidユーザ・HarmonyOSユーザが少しでも良い製品を生活で便利に使えたら、嬉しいことだと思います。<br>後ほど日本語化をもっと完璧にやろうかと思います。今は中国語でハードコーディングしています。</p>
+<p>後続スマートウォッチで操作可能にしたいが、いつもデカいスマホを取り出すのは不便です…<br>セサミの公式開発はまずやってくれることを期待したいが、我慢できなければやってしまうかも。</p>
+<p>興味・質問があったら、コメント残してね</p>
+</div></article></div></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Giko Blog</a><p class="is-size-7"><span>&copy; 2024 William Young</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

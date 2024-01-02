@@ -1,101 +1,70 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-  <meta name="robots" content="index, follow">
-  <!-- title -->
-  
-    
-  <title>教育 - Giko Blog</title>
-    
-  
-  
-  <!-- open graph -->
-  <meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giko Blog">
-<meta property="og:url" content="https://yougikou.github.io/tags/%E6%95%99%E8%82%B2/index.html">
-<meta property="og:site_name" content="Giko Blog">
-<meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="William Young">
-<meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,">
-<meta name="twitter:card" content="summary">
-  <!-- canonical -->
-  
-  <link rel="canonical" href="https://yougikou.github.io/tags/教育/">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <!-- CSS -->
-  
-<link rel="stylesheet" href="/css/reset.css">
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><title>标签: 教育 - Giko Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Giko Blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Giko Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:type" content="website"><meta property="og:title" content="Giko Blog"><meta property="og:url" content="https://yougikou.github.io/"><meta property="og:site_name" content="Giko Blog"><meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://yougikou.github.io/img/og_image.png"><meta property="article:author" content="William Young"><meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yougikou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://yougikou.github.io"},"headline":"Giko Blog","image":["https://yougikou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Young"},"publisher":{"@type":"Organization","name":"Giko Blog","logo":{"@type":"ImageObject"}},"description":"个人笔记, 散记 | Giko, tech enthusiast, Architect"}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/markdown.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-<link rel="stylesheet" href="/css/fonts.css">
-
-<meta name="generator" content="Hexo 7.0.0"></head>
-
-    <body>
-        <div class="paper">
-            <div class="paper-main">
-                
-                    <div class="header">
-    <a class="logo" href="/">Giko Blog</a>
-    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
-    <ul class="nav">
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/archives">Archives</a></li>
-        
-    </ul>
-</div>
-
-                
-                <div class="archive-list">
-    <ul class="archive">
-        
-        <li>
-            <span class="archive-date">2020.11.08</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2020/11/08/ReactIndex/">ReactIndex - 让文件夹index页面变得更有实用性</a>
-                <!-- <a class="read-more" href="/2020/11/08/ReactIndex/"> ... </a> -->
-            </div>
-        </li>
-        
-    </ul>
-</div>
-
-                <div class="footer">
-    <span>Copyright © 2023 Giko Blog</span>
-    <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> with <a target="_blank" rel="noopener" href="https:///imzl.com/zenmind">ZenMind</a></span>
-</div>
-
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
-
-
-<script src="/js/highlight.min.js"></script>
-
-
-<script src="/js/highlightjs-line-numbers.js"></script>
-
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-
-            </div>
-        </div>
-    </body>
-</html>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Giko Blog</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">教育</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-11-08T03:00:00.000Z" title="2020/11/8 12:00:00">2020-11-08</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:18:11.652Z" title="2024/1/2 21:18:11">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/11/08/ReactIndex/">ReactIndex - 让文件夹index页面变得更有实用性</a></p><div class="content"><h2 id="React的学习和家庭需求"><a href="#React的学习和家庭需求" class="headerlink" title="React的学习和家庭需求"></a>React的学习和家庭需求</h2><p>&emsp;工作上有需要接触React，而在正式接触相关产品之前为了了解一些基础。除了标准教程里面的例子意外，总觉得有点不够。<br>正好孩子他妈最近交给我一个任务：</p>
+<ul>
+<li>儿子的学习资料需要整理，同时要方便他复习。</li>
+<li>复习的时候最好可以迅速查看，答案最好就在旁边，方便反复记忆。</li>
+</ul>
+<h2 id="需求分析和精炼"><a href="#需求分析和精炼" class="headerlink" title="需求分析和精炼"></a>需求分析和精炼</h2><p>针对领导的要求，本人第一时间想出</p>
+<h3 id="大致方案"><a href="#大致方案" class="headerlink" title="大致方案"></a>大致方案</h3><ul>
+<li>Web方式的学习资料浏览最大限度的提高了可用性。只要自建服务器，随时随地可以让孩子利用空余时间浏览。</li>
+<li>答案切换 - 简单，用Javascript做个简单的图片切换即可。</li>
+<li>大部分图像链接使用python自动生成html页面。</li>
+</ul>
+<h3 id="说动手就动手，结果初步方案尝试下来发现几个问题"><a href="#说动手就动手，结果初步方案尝试下来发现几个问题" class="headerlink" title="说动手就动手，结果初步方案尝试下来发现几个问题"></a>说动手就动手，结果初步方案尝试下来发现几个问题</h3><ul>
+<li>图片切换的JavaScript很简单，但是生成静态页面即便使用python自动化，也还是需要手动执行。文件的维护不仅仅只是图像文件本身。</li>
+<li>打开页面还是需要从Directory index进入，对于大量文件夹，多少需要分类的功能。</li>
+</ul>
+<h3 id="实现方案方向变更"><a href="#实现方案方向变更" class="headerlink" title="实现方案方向变更"></a>实现方案方向变更</h3><ul>
+<li>由于Directory index的形式就是固定的。使用ajax获取后可以进一步处理。生成动态页面，实现仅仅需要维护文件夹中的内容文件即可。</li>
+<li>使用react构筑，添加内容分类功能。</li>
+</ul>
+<h2 id="React-index的雏形"><a href="#React-index的雏形" class="headerlink" title="React index的雏形"></a>React index的雏形</h2><h3 id="使用Ant-design替换了简陋的Directory-index"><a href="#使用Ant-design替换了简陋的Directory-index" class="headerlink" title="使用Ant design替换了简陋的Directory index"></a>使用Ant design替换了简陋的Directory index</h3><p><img src="/2020/11/08/ReactIndex/2020-11-08-ReactIndex_better-ui.gif" alt="picture"></p>
+<h3 id="加入基于文件夹名的二级分类功能"><a href="#加入基于文件夹名的二级分类功能" class="headerlink" title="加入基于文件夹名的二级分类功能"></a>加入基于文件夹名的二级分类功能</h3><p><img src="/2020/11/08/ReactIndex/2020-11-08-ReactIndex_category-ui.gif" alt="picture"></p>
+<h3 id="加入文件夹内容类型设定添加Markdown文本页面（初步尝试）"><a href="#加入文件夹内容类型设定添加Markdown文本页面（初步尝试）" class="headerlink" title="加入文件夹内容类型设定添加Markdown文本页面（初步尝试）"></a>加入文件夹内容类型设定添加Markdown文本页面（初步尝试）</h3><p><img src="/2020/11/08/ReactIndex/2020-11-08-ReactIndex_markdown-page.gif" alt="picture"></p>
+<h3 id="添加学习资料复习页面-使用Ant-design组件显得有逼格"><a href="#添加学习资料复习页面-使用Ant-design组件显得有逼格" class="headerlink" title="添加学习资料复习页面-使用Ant design组件显得有逼格"></a>添加学习资料复习页面-使用Ant design组件显得有逼格</h3><p><img src="/2020/11/08/ReactIndex/2020-11-08-ReactIndex_simage-page.gif" alt="picture"></p>
+<h3 id="不是很需要-但是还是加入基于在线iconfont的分类图标自定义功能"><a href="#不是很需要-但是还是加入基于在线iconfont的分类图标自定义功能" class="headerlink" title="不是很需要-但是还是加入基于在线iconfont的分类图标自定义功能"></a>不是很需要-但是还是加入基于在线iconfont的分类图标自定义功能</h3><p><img src="/2020/11/08/ReactIndex/2020-11-08-ReactIndex_icon-custmization.gif" alt="picture"></p>
+<h2 id="后续计划"><a href="#后续计划" class="headerlink" title="后续计划"></a>后续计划</h2><p>React Index的设计本身就是用于家庭成员简单查看的家庭内部网站。<br>只要懂得文件夹、文件的组织管理，妈妈孩子都可以很容易的添加内容。<br>所以针对现在家庭使用中的一些需求，有一些后续打算</p>
+<ol>
+<li>添加（不用下载PDF的）PDF预览（这个还需要技术调查，好像有js库可以实现）。</li>
+<li>多域名支持和切换，这样可以配置多个（可能不是很有必要）。</li>
+<li>功能页面看看能不能做成动态加载，方便扩展。</li>
+<li>看领导需求。。。</li>
+</ol>
+</div></article></div></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Giko Blog</a><p class="is-size-7"><span>&copy; 2024 William Young</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

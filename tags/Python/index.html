@@ -1,101 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-  <meta name="robots" content="index, follow">
-  <!-- title -->
-  
-    
-  <title>Python - Giko Blog</title>
-    
-  
-  
-  <!-- open graph -->
-  <meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giko Blog">
-<meta property="og:url" content="https://yougikou.github.io/tags/Python/index.html">
-<meta property="og:site_name" content="Giko Blog">
-<meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="William Young">
-<meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,">
-<meta name="twitter:card" content="summary">
-  <!-- canonical -->
-  
-  <link rel="canonical" href="https://yougikou.github.io/tags/Python/">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <!-- CSS -->
-  
-<link rel="stylesheet" href="/css/reset.css">
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><title>标签: Python - Giko Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Giko Blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Giko Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:type" content="website"><meta property="og:title" content="Giko Blog"><meta property="og:url" content="https://yougikou.github.io/"><meta property="og:site_name" content="Giko Blog"><meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://yougikou.github.io/img/og_image.png"><meta property="article:author" content="William Young"><meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yougikou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://yougikou.github.io"},"headline":"Giko Blog","image":["https://yougikou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Young"},"publisher":{"@type":"Organization","name":"Giko Blog","logo":{"@type":"ImageObject"}},"description":"个人笔记, 散记 | Giko, tech enthusiast, Architect"}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/markdown.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-<link rel="stylesheet" href="/css/fonts.css">
-
-<meta name="generator" content="Hexo 7.0.0"></head>
-
-    <body>
-        <div class="paper">
-            <div class="paper-main">
-                
-                    <div class="header">
-    <a class="logo" href="/">Giko Blog</a>
-    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
-    <ul class="nav">
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/archives">Archives</a></li>
-        
-    </ul>
-</div>
-
-                
-                <div class="archive-list">
-    <ul class="archive">
-        
-        <li>
-            <span class="archive-date">2020.05.05</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2020/05/05/SelfPythonPDFTool/">Python PDF自制工具</a>
-                <!-- <a class="read-more" href="/2020/05/05/SelfPythonPDFTool/"> ... </a> -->
-            </div>
-        </li>
-        
-    </ul>
-</div>
-
-                <div class="footer">
-    <span>Copyright © 2023 Giko Blog</span>
-    <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> with <a target="_blank" rel="noopener" href="https:///imzl.com/zenmind">ZenMind</a></span>
-</div>
-
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
-
-
-<script src="/js/highlight.min.js"></script>
-
-
-<script src="/js/highlightjs-line-numbers.js"></script>
-
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-
-            </div>
-        </div>
-    </body>
-</html>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Giko Blog</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">Python</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-05-05T03:00:00.000Z" title="2020/5/5 12:00:00">2020-05-05</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:15:29.939Z" title="2024/1/2 21:15:29">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/05/05/SelfPythonPDFTool/">Python PDF自制工具</a></p><div class="content"><h3 id="方便的快速编程语言和丰富的扩展"><a href="#方便的快速编程语言和丰富的扩展" class="headerlink" title="方便的快速编程语言和丰富的扩展"></a>方便的快速编程语言和丰富的扩展</h3><p>&emsp;我对于Python的印象就是一个好写, 好除虫, 快速上手的强大的批处理工具语言.当然由于工作上不是经常用到,所以认识比较浅薄.<br>这阶段由于为了帮孩子有效复习, 买了可以双面扫描的打印机后, 发现家用打印机毕竟不是商用, 一些功能还是比较不方便.<br>譬如, 扫描下来的页面只能是竖着的, 电脑上查看要横过来还得自己旋转. 有些是书本册子的, 中间的装订线去除后扫描, 页面需要分割, 顺序也需要重新排序. 虽然有PDF编辑软件, 但每次这种单纯操作的工作量还是很大.<br>而且很狗屁的是很多所谓的免费PDF编辑软件都一些基本功能, 还要安装. 一旦需要高级一点的马上需要升级订阅.<br>这时我首先想到了Python.</p>
+<h3 id="使用PDF库"><a href="#使用PDF库" class="headerlink" title="使用PDF库"></a>使用PDF库</h3><p>&emsp;pdfrw - 至少对于我的需求这个库非常的好. 一开始使用PyPDF2, 但是在分割的时候发现会造成文件大小翻倍, 也不能压缩,所以途中放弃转用pdfrw. 而且发现该作者还很热心, 在PyPDF2的分割文件大小翻倍的issue thread上给出pdfrw的写法.</p>
+<h3 id="自制工具"><a href="#自制工具" class="headerlink" title="自制工具"></a>自制工具</h3><p>&emsp;所有工具追求易用, 都采用选择PDF, 拖拽带相应的py上后就开始执行.<br>所有输出统一到同文件夹内新建out的子文件夹中.<br>出现任何异常console画面会停顿10秒可以查看出错的命令行数, 错误内容.</p>
+<p>使用前先安装pdfrw(pip install pdfrw).<br>最好把Python升级到3.8以上, 我发现有新的python launcher可以自动关联py文件.<br>双击, 拖拽文件执行都很方便.</p>
+<ol>
+<li><a href="mergePdf.py">mergePdf.py</a><br>把拖拽的多个文件合并成一个文件. 拖拽时鼠标拖动的文件最好是第一个.<br>不然可能点中的文件可以跑到头上去.</li>
+<li><a href="rotateL90.py">rotateL90.py</a><br>把拖拽的多个文件都执行向左旋转90度</li>
+<li><a href="split&sort.py">split&amp;sort.py</a><br>这个比较高级点. 是根据以下的扫描前提进行处理的.<br>去装订线扫描时 - 从中间页(为第一页)开始扫描.<br>这样譬如中间页是 11,12, 则 Page1(11,12), Page2(13,10), Page3(9,14)…<br>所以这个py把拖拽的文件都执行下述操作后分别输出为一个新的pdf.<br>原文件可供制册打印, 处理后的文件可用于电脑阅读.<ul>
+<li>分页: 把每页分成左右两页</li>
+<li>排序: 根据上述规则, 把分割的页面按真正的页序排序</li>
+</ul>
+</li>
+</ol>
+<p>2020-05-05追加</p>
+<ol>
+<li><a href="split&sort_reverse.py">split&amp;sort_reverse.py</a><br>上一个脚本的小改动, 以应付竖版装订书的页序(像古文那样从右往左读,翻页的册子)</li>
+<li><a href="attached/reverse.py">reverse.py</a><br>单纯倒序排列PDF页面.</li>
+<li><a href="delete.py">delete.py</a><br>删除指定页面, 仅处理单个文件. 删除页面以空格分隔指定.</li>
+</ol>
+<p>感觉有了python都懒得打开臃肿的PDF编辑软件了.</p>
+<p>分享py以供有同样需求的朋友, 或者当样例参考, 毕竟需求类似的话比自己从0开始考虑要省力很多.</p>
+</div></article></div></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Giko Blog</a><p class="is-size-7"><span>&copy; 2024 William Young</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

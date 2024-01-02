@@ -1,117 +1,108 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-  <meta name="robots" content="index, follow">
-  <!-- title -->
-  
-    
-  <title>windows - Giko Blog</title>
-    
-  
-  
-  <!-- open graph -->
-  <meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giko Blog">
-<meta property="og:url" content="https://yougikou.github.io/tags/windows/index.html">
-<meta property="og:site_name" content="Giko Blog">
-<meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="William Young">
-<meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,">
-<meta name="twitter:card" content="summary">
-  <!-- canonical -->
-  
-  <link rel="canonical" href="https://yougikou.github.io/tags/windows/">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <!-- CSS -->
-  
-<link rel="stylesheet" href="/css/reset.css">
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><title>标签: windows - Giko Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Giko Blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Giko Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:type" content="website"><meta property="og:title" content="Giko Blog"><meta property="og:url" content="https://yougikou.github.io/"><meta property="og:site_name" content="Giko Blog"><meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://yougikou.github.io/img/og_image.png"><meta property="article:author" content="William Young"><meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yougikou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://yougikou.github.io"},"headline":"Giko Blog","image":["https://yougikou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Young"},"publisher":{"@type":"Organization","name":"Giko Blog","logo":{"@type":"ImageObject"}},"description":"个人笔记, 散记 | Giko, tech enthusiast, Architect"}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-<link rel="stylesheet" href="/css/markdown.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-<link rel="stylesheet" href="/css/fonts.css">
-
-<meta name="generator" content="Hexo 7.0.0"></head>
-
-    <body>
-        <div class="paper">
-            <div class="paper-main">
-                
-                    <div class="header">
-    <a class="logo" href="/">Giko Blog</a>
-    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
-    <ul class="nav">
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/archives">Archives</a></li>
-        
-    </ul>
-</div>
-
-                
-                <div class="archive-list">
-    <ul class="archive">
-        
-        <li>
-            <span class="archive-date">2020.06.12</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2020/06/12/UseCmderSwitchEnv/">抛砖引玉 - 利用Cmder对本地Java运行时环境的切换应用</a>
-                <!-- <a class="read-more" href="/2020/06/12/UseCmderSwitchEnv/"> ... </a> -->
-            </div>
-        </li>
-        
-        <li>
-            <span class="archive-date">2020.05.05</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2020/05/05/SelfPythonPDFTool/">Python PDF自制工具</a>
-                <!-- <a class="read-more" href="/2020/05/05/SelfPythonPDFTool/"> ... </a> -->
-            </div>
-        </li>
-        
-        <li>
-            <span class="archive-date">2020.03.20</span>
-            <div class="archive-main">
-                <a class="archive-title" href="/2020/03/20/HowToDiff2ZipInGit/">Git - 如何在Windows git环境下提取两次commit的文件增量并打包成zip</a>
-                <!-- <a class="read-more" href="/2020/03/20/HowToDiff2ZipInGit/"> ... </a> -->
-            </div>
-        </li>
-        
-    </ul>
-</div>
-
-                <div class="footer">
-    <span>Copyright © 2023 Giko Blog</span>
-    <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> with <a target="_blank" rel="noopener" href="https:///imzl.com/zenmind">ZenMind</a></span>
-</div>
-
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
-
-
-<script src="/js/highlight.min.js"></script>
-
-
-<script src="/js/highlightjs-line-numbers.js"></script>
-
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-
-            </div>
-        </div>
-    </body>
-</html>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Giko Blog</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">windows</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-06-12T03:00:00.000Z" title="2020/6/12 12:00:00">2020-06-12</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:17:43.033Z" title="2024/1/2 21:17:43">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/06/12/UseCmderSwitchEnv/">抛砖引玉 - 利用Cmder对本地Java运行时环境的切换应用</a></p><div class="content"><h3 id="多版本环境"><a href="#多版本环境" class="headerlink" title="多版本环境"></a>多版本环境</h3><p>做开发的朋友大多数都会有多个环境的切换困扰。通常一个好的运行时环境能有一个好的版本管理器比较重要。<br>就譬如NodeJs的nvm - 虽然这也是因为Node的版本升级实在太快，不得不出这么一个（不然就是噩梦）。<br>但是相对来说向前兼容性比较强的Java环境来说，这种需求不是很突出。所以这类版本管理在Java环境中就不是很常用。  </p>
+<p>不过相对于比较滞后的企业应用，Oracle对JDK的不断升级迭代，很多旧系统不得不跟随步伐，<br>很多商业软件也不得不跟随步伐的情况下。JDK的多版本环境的需求很多时候也是刚性的。</p>
+<h3 id="Cmder"><a href="#Cmder" class="headerlink" title="Cmder"></a>Cmder</h3><p><a target="_blank" rel="noopener" href="https://cmder.net/">Cmder</a>是Windows命令行终端的一个很好代替，不光默认支持Git，甚至集成了一些Linux的工具命令。<br>除了UI，对于Windows系统上下文菜单的集成配置自由度也是相当的高。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>在安装多个JDK需要切换的时候，通常就是在指定程序的启动bat里面临时替换JAVA_HOME和PATH。<br>非常简单但是每次都要写一段，有时候需要改变运行时还需要改动。简单但是繁琐。<br>由于Cmder本身带有一个初始化script。理论上把JAVA_HOME和PATH的替换命令加进去就可以了。  </p>
+<h3 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h3><p>原理很简单，但是如何在一个工具中实现理论上的配置通常就是比较花时间的地方。<br>而且工具也可能有多个地方可以更改，如何找到最优的方法也是比较花时间。<br>下面是我个人认为最优的方法。无需编辑添加任何文件-直接在设置中添加。  </p>
+<ol>
+<li><p>打开Cmder设置，点击进入【启动-任务】设置</p>
+</li>
+<li><p>复制一个现有任务（以管理员打开cmder比较好），加上适当后缀，譬如jdk7</p>
+</li>
+<li><p>修改命令组内容，如下<br>  <img src="/2020/06/12/UseCmderSwitchEnv/2020-06-12-UseCmderSwitchEnv_1.jpg" alt="picture">  </p>
+<p> 以下文本用于复制粘贴</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*cmd /k %ConEmuDir%\..\init.bat&amp;SET JAVA_HOME=&quot;C:\Java\jdk1.7.0_25&quot;&amp;SET PATH=C:\Java\jdk1.7.0_25\bin;%PATH%</span><br></pre></td></tr></table></figure></li>
+<li><p>点击进入【集成】设置</p>
+</li>
+<li><p>选取一个菜单项（譬如Cmder Here）后，更改菜单项名称(譬如 Cmder Here w&#x2F;jdk7)，命令（使用新建的jdk7任务），然后点击【注册】<br>  <img src="/2020/06/12/UseCmderSwitchEnv/2020-06-12-UseCmderSwitchEnv_2.jpg" alt="picture"></p>
+</li>
+</ol>
+<h3 id="确认"><a href="#确认" class="headerlink" title="确认"></a>确认</h3><p>这样你会发现在Windows系统的上下文菜单（右键菜单）中多了一个【Cmder Here w&#x2F;jdk7】。<br>在任意文件夹中右键点击该项，就会启动一个cmder的命令行窗口。<br><img src="/2020/06/12/UseCmderSwitchEnv/2020-06-12-UseCmderSwitchEnv_3.jpg" alt="picture"><br>输入java -version 就可以确认到你预先设置好的Java环境了<br><img src="/2020/06/12/UseCmderSwitchEnv/2020-06-12-UseCmderSwitchEnv_4.jpg" alt="picture"></p>
+<h3 id="应用和TODO"><a href="#应用和TODO" class="headerlink" title="应用和TODO"></a>应用和TODO</h3><p>上述是利用Cmder最基本的【在文件夹中打终端】功能，实现在特定PATH下指定运行时打开命令终端。  </p>
+<ul>
+<li>同理可以应用到任何一种基于PATH的运行时环境的切换。  </li>
+<li>Cmder还可以把选中文件作为参数传入。这个我还没尝试成功如何设置。<br>理论上应该可以指定Java JDK版本运行选中bat。加上这个功能的话用着就更加舒服了。<br>有朋友知道的话，希望分享一下设置方法，命令组内容。</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-05-05T03:00:00.000Z" title="2020/5/5 12:00:00">2020-05-05</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:15:29.939Z" title="2024/1/2 21:15:29">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/05/05/SelfPythonPDFTool/">Python PDF自制工具</a></p><div class="content"><h3 id="方便的快速编程语言和丰富的扩展"><a href="#方便的快速编程语言和丰富的扩展" class="headerlink" title="方便的快速编程语言和丰富的扩展"></a>方便的快速编程语言和丰富的扩展</h3><p>&emsp;我对于Python的印象就是一个好写, 好除虫, 快速上手的强大的批处理工具语言.当然由于工作上不是经常用到,所以认识比较浅薄.<br>这阶段由于为了帮孩子有效复习, 买了可以双面扫描的打印机后, 发现家用打印机毕竟不是商用, 一些功能还是比较不方便.<br>譬如, 扫描下来的页面只能是竖着的, 电脑上查看要横过来还得自己旋转. 有些是书本册子的, 中间的装订线去除后扫描, 页面需要分割, 顺序也需要重新排序. 虽然有PDF编辑软件, 但每次这种单纯操作的工作量还是很大.<br>而且很狗屁的是很多所谓的免费PDF编辑软件都一些基本功能, 还要安装. 一旦需要高级一点的马上需要升级订阅.<br>这时我首先想到了Python.</p>
+<h3 id="使用PDF库"><a href="#使用PDF库" class="headerlink" title="使用PDF库"></a>使用PDF库</h3><p>&emsp;pdfrw - 至少对于我的需求这个库非常的好. 一开始使用PyPDF2, 但是在分割的时候发现会造成文件大小翻倍, 也不能压缩,所以途中放弃转用pdfrw. 而且发现该作者还很热心, 在PyPDF2的分割文件大小翻倍的issue thread上给出pdfrw的写法.</p>
+<h3 id="自制工具"><a href="#自制工具" class="headerlink" title="自制工具"></a>自制工具</h3><p>&emsp;所有工具追求易用, 都采用选择PDF, 拖拽带相应的py上后就开始执行.<br>所有输出统一到同文件夹内新建out的子文件夹中.<br>出现任何异常console画面会停顿10秒可以查看出错的命令行数, 错误内容.</p>
+<p>使用前先安装pdfrw(pip install pdfrw).<br>最好把Python升级到3.8以上, 我发现有新的python launcher可以自动关联py文件.<br>双击, 拖拽文件执行都很方便.</p>
+<ol>
+<li><a href="mergePdf.py">mergePdf.py</a><br>把拖拽的多个文件合并成一个文件. 拖拽时鼠标拖动的文件最好是第一个.<br>不然可能点中的文件可以跑到头上去.</li>
+<li><a href="rotateL90.py">rotateL90.py</a><br>把拖拽的多个文件都执行向左旋转90度</li>
+<li><a href="split&sort.py">split&amp;sort.py</a><br>这个比较高级点. 是根据以下的扫描前提进行处理的.<br>去装订线扫描时 - 从中间页(为第一页)开始扫描.<br>这样譬如中间页是 11,12, 则 Page1(11,12), Page2(13,10), Page3(9,14)…<br>所以这个py把拖拽的文件都执行下述操作后分别输出为一个新的pdf.<br>原文件可供制册打印, 处理后的文件可用于电脑阅读.<ul>
+<li>分页: 把每页分成左右两页</li>
+<li>排序: 根据上述规则, 把分割的页面按真正的页序排序</li>
+</ul>
+</li>
+</ol>
+<p>2020-05-05追加</p>
+<ol>
+<li><a href="split&sort_reverse.py">split&amp;sort_reverse.py</a><br>上一个脚本的小改动, 以应付竖版装订书的页序(像古文那样从右往左读,翻页的册子)</li>
+<li><a href="attached/reverse.py">reverse.py</a><br>单纯倒序排列PDF页面.</li>
+<li><a href="delete.py">delete.py</a><br>删除指定页面, 仅处理单个文件. 删除页面以空格分隔指定.</li>
+</ol>
+<p>感觉有了python都懒得打开臃肿的PDF编辑软件了.</p>
+<p>分享py以供有同样需求的朋友, 或者当样例参考, 毕竟需求类似的话比自己从0开始考虑要省力很多.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-03-20T03:00:00.000Z" title="2020/3/20 12:00:00">2020-03-20</time>发表</span><span class="level-item"><time dateTime="2024-01-02T12:16:12.568Z" title="2024/1/2 21:16:12">2024-01-02</time>更新</span><span class="level-item"> Giko </span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/20/HowToDiff2ZipInGit/">Git - 如何在Windows git环境下提取两次commit的文件增量并打包成zip</a></p><div class="content"><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>工作上用了一段时间的 Git, 虽然同事都推荐直接用命令行, 无奈我这个人还是喜欢看 UI. 而且在 SVN 时代, 抽取两次提交的变更文件是非常惯用的操作, 切换到 Git 之后一直为如何实现这个命令耿耿于怀. 虽然看了有各种方式可以实现, 但是始终没到自己惯用的方式.<br>最近发现新思路, 于是就整理一下, 方便大家 Google.</p>
+<h3 id="一些通常能-Google-到的方法"><a href="#一些通常能-Google-到的方法" class="headerlink" title="一些通常能 Google 到的方法"></a>一些通常能 Google 到的方法</h3><ol>
+<li><p>TortoiseGit 内建了一个在 log 画面中选择文件后抽取的功能<br><img src="/2020/03/20/HowToDiff2ZipInGit/2020-03-20-HowToDiff2ZipInGit-1.jpg" alt="TortoiseGit Export Selection To..."><br>这个功能对于抽取单次提取的文件很方便, 但是多次累计就用不上了, 在 log 画面选两个 commit 完全和 svn 不一样干脆就看不到文件了. 虽然网上有文章介绍这个小技巧, 但是因为这个原因, 所以…不完美.</p>
+</li>
+<li><p>Windows batch<br>我曾一度使用, 是一个日本人写的. 原理就是用 git diff 出来的结果放入循环, 一个一个拷贝出来.<br>可以设置到 SourceTree 的 Custom Actions 中直接使用.<br>这个人的 blog 我现在也找不到, 就不贴了. 而且这个方法有个弊病!<br>在 Windows 环境下, 文件路径是有长度限制的, 在很多项目中文件夹太多层的话, 就会出现找不到文件的问题.<br>当然从 Windows 10 开始通过策略组可以取消这个限制 - 但是也就证明了在环境不通用的情况下不是每个人都能成功配置,所以…不完美.</p>
+</li>
+<li><p>Shell script<br>Git diff $sha1 $sha2 –name-only | xargs tar -zcvf update.tar.gz 这个方法是命令行, linux 中最通用的.<br>的确很好使, Windows 环境下安装 Git 自带的 Linux 工具命令后, 使用起来一点问题没有.<br>但是就是每次得拷贝 SHA 值比较费神, 另外 tar 的压缩方式在 Windows 下总觉得别扭, 解压得 2 次…不完美</p>
+</li>
+<li><p>SourceTree 原生的功能就更不用提了, 只能 Archive 真个项目状态, 太费事费力.</p>
+</li>
+</ol>
+<h3 id="几个关键以及解决方式"><a href="#几个关键以及解决方式" class="headerlink" title="几个关键以及解决方式"></a>几个关键以及解决方式</h3><ol>
+<li><p>如何从 GUI 操作传入选中的 SHA 值<br>SourceTree 的 Custom Actions 提供了这点, 可以传递$SHA 给 Script.</p>
+</li>
+<li><p>如何让 SourceTree 的 Custom Actions 执行 bash 的 shell scrip<br>这个点是最重要的关键, 但是我在找这个解决方案的时候, 没有文章提及这点, 还是瞎猫碰死耗子在一片完全不相关的文章中找到了答案. 配置如下, Git 是大家都会装的东西, bash 自动附带.<br><img src="/2020/03/20/HowToDiff2ZipInGit/2020-03-20-HowToDiff2ZipInGit-2.jpg" alt="SourceTree Custom Action Run Bash Script"></p>
+</li>
+<li><p>这样我们就可以在 Windows 下用方便的 shell command 抽取两次提交的变更文件, 同时打包.<br>但是还有一个问题就是如何打包成 zip, Windows 自身没有带这方面的命令. 而 Git 的 linux 工具包 unzip, tar 都带了, 唯独 zip 这个东西没带. (我在调查这个的时候有段小插曲, 我两台电脑, 一台有 zip 命令, 一台没有. 一开始我搞不懂我装了什么不一样的东西造成了这个差异, 花了好长时间才发现 Oracle 数据库安装目录的 bin 里面居然带了 zip.exe…好吧)</p>
+<p>关键我在网上除了找得到这个项目(Info-ZIP)的代码, 居然找不到编译好的 zip.exe,拷贝来用. 有需要的朋友可以直接在这里下(<a href="zip.exe.zip">zip.exe.zip</a>).<br>放到 Git 安装文件夹的那个 linux 工具包路径(Git\usr\bin)里就可以像其他命令一样直接使用.</p>
+<p>下面就是 shell 本身, 其实搞明白就没啥大不了的. 有需要就参考一下.</p>
+<p><em>$Repo 不是必须的, SourceTree 中执行时当前文件夹自动为项目根目录.</em></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">use parameter -&gt; <span class="variable">$REPO</span> <span class="variable">$SHA</span></span></span><br><span class="line">repo=&quot;&quot;</span><br><span class="line">sha1=&quot;&quot;</span><br><span class="line">sha2=&quot;&quot;</span><br><span class="line">if [ -n &quot;$1&quot; ] &amp;&amp; [ -n &quot;$2&quot; ] &amp;&amp; [ -n &quot;$3&quot; ] &amp;&amp; [ -z &quot;$4&quot; ]; then</span><br><span class="line">repo=$1</span><br><span class="line">sha1=$3</span><br><span class="line">sha2=$2</span><br><span class="line">echo &quot;Repository is $&#123;1&#125;.&quot;</span><br><span class="line">echo &quot;Current path is $&#123;PWD&#125;.&quot;</span><br><span class="line">echo $2</span><br><span class="line">echo $3</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">git diff --diff-filter=ACM <span class="variable">$sha1</span> <span class="variable">$sha2</span> --name-only | xargs tar -czvf update.tar.gz</span></span><br><span class="line">git diff --diff-filter=ACM $sha1 $sha2 --name-only | xargs zip -r ./update.zip</span><br><span class="line">else</span><br><span class="line">echo &quot;please select two commit&quot;</span><br><span class="line">fi</span><br><span class="line">exit</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>补充: 添加–diff-filter&#x3D;ACM 把变更限定为添加更改的文件, 因为删除的文件在打包时自然会找不到. 可以看 log 或者添加这个 option 事先除去.</p>
+<p>不知道向我这样还是用 Windows 做主要开发环境, 又有上述需求的朋友是否很多, 我找了很久找不到一个完美方案, 这个方法是自我觉得比较完善的, 给有需要的朋友参考.<br>十多年没码字, 写这么一点就有点累了:-O</p>
+</div></article></div></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Giko Blog</a><p class="is-size-7"><span>&copy; 2024 William Young</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
