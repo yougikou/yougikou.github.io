@@ -4,17 +4,23 @@
   <meta charset="utf-8">
   
   
-  <title>归档: 2024/1 | Giko Blog</title>
+  <title>Python PDF自制工具 | Giko Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giko Blog">
-<meta property="og:url" content="https://yougikou.github.io/archives/2024/01/index.html">
+  <meta name="description" content="方便的快速编程语言和丰富的扩展&emsp;我对于Python的印象就是一个好写, 好除虫, 快速上手的强大的批处理工具语言.当然由于工作上不是经常用到,所以认识比较浅薄.这阶段由于为了帮孩子有效复习, 买了可以双面扫描的打印机后, 发现家用打印机毕竟不是商用, 一些功能还是比较不方便.譬如, 扫描下来的页面只能是竖着的, 电脑上查看要横过来还得自己旋转. 有些是书本册子的, 中间的装订线去除后扫描">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python PDF自制工具">
+<meta property="og:url" content="https://yougikou.github.io/2020/05/05/SelfPythonPDFTool/index.html">
 <meta property="og:site_name" content="Giko Blog">
-<meta property="og:description" content="个人笔记, 散记 | Giko, tech enthusiast, Architect">
+<meta property="og:description" content="方便的快速编程语言和丰富的扩展&emsp;我对于Python的印象就是一个好写, 好除虫, 快速上手的强大的批处理工具语言.当然由于工作上不是经常用到,所以认识比较浅薄.这阶段由于为了帮孩子有效复习, 买了可以双面扫描的打印机后, 发现家用打印机毕竟不是商用, 一些功能还是比较不方便.譬如, 扫描下来的页面只能是竖着的, 电脑上查看要横过来还得自己旋转. 有些是书本册子的, 中间的装订线去除后扫描">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-05T03:00:00.000Z">
+<meta property="article:modified_time" content="2024-01-02T12:15:29.939Z">
 <meta property="article:author" content="William Young">
-<meta property="article:tag" content="博客, 个人网站, 小技巧, 灵感,">
+<meta property="article:tag" content="windows">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="PDF">
+<meta property="article:tag" content="Tool">
+<meta property="article:tag" content="PDF merge, split, rotate">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Giko Blog" type="application/atom+xml">
@@ -74,39 +80,84 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/01/02/2024-01-02-UpdateBlogToHexo/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-01-02T12:04:11.000Z" itemprop="datePublished">1月 2</time>
+        <section id="main"><article id="post-SelfPythonPDFTool" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/05/05/SelfPythonPDFTool/" class="article-date">
+  <time class="dt-published" datetime="2020-05-05T03:00:00.000Z" itemprop="datePublished">2020-05-05</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/01/02/2024-01-02-UpdateBlogToHexo/">2024-01-02-UpdateBlogToHexo</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Python PDF自制工具
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="方便的快速编程语言和丰富的扩展"><a href="#方便的快速编程语言和丰富的扩展" class="headerlink" title="方便的快速编程语言和丰富的扩展"></a>方便的快速编程语言和丰富的扩展</h3><p>&emsp;我对于Python的印象就是一个好写, 好除虫, 快速上手的强大的批处理工具语言.当然由于工作上不是经常用到,所以认识比较浅薄.<br>这阶段由于为了帮孩子有效复习, 买了可以双面扫描的打印机后, 发现家用打印机毕竟不是商用, 一些功能还是比较不方便.<br>譬如, 扫描下来的页面只能是竖着的, 电脑上查看要横过来还得自己旋转. 有些是书本册子的, 中间的装订线去除后扫描, 页面需要分割, 顺序也需要重新排序. 虽然有PDF编辑软件, 但每次这种单纯操作的工作量还是很大.<br>而且很狗屁的是很多所谓的免费PDF编辑软件都一些基本功能, 还要安装. 一旦需要高级一点的马上需要升级订阅.<br>这时我首先想到了Python.</p>
+<h3 id="使用PDF库"><a href="#使用PDF库" class="headerlink" title="使用PDF库"></a>使用PDF库</h3><p>&emsp;pdfrw - 至少对于我的需求这个库非常的好. 一开始使用PyPDF2, 但是在分割的时候发现会造成文件大小翻倍, 也不能压缩,所以途中放弃转用pdfrw. 而且发现该作者还很热心, 在PyPDF2的分割文件大小翻倍的issue thread上给出pdfrw的写法.</p>
+<h3 id="自制工具"><a href="#自制工具" class="headerlink" title="自制工具"></a>自制工具</h3><p>&emsp;所有工具追求易用, 都采用选择PDF, 拖拽带相应的py上后就开始执行.<br>所有输出统一到同文件夹内新建out的子文件夹中.<br>出现任何异常console画面会停顿10秒可以查看出错的命令行数, 错误内容.</p>
+<p>使用前先安装pdfrw(pip install pdfrw).<br>最好把Python升级到3.8以上, 我发现有新的python launcher可以自动关联py文件.<br>双击, 拖拽文件执行都很方便.</p>
+<ol>
+<li><a href="mergePdf.py">mergePdf.py</a><br>把拖拽的多个文件合并成一个文件. 拖拽时鼠标拖动的文件最好是第一个.<br>不然可能点中的文件可以跑到头上去.</li>
+<li><a href="rotateL90.py">rotateL90.py</a><br>把拖拽的多个文件都执行向左旋转90度</li>
+<li><a href="split&sort.py">split&amp;sort.py</a><br>这个比较高级点. 是根据以下的扫描前提进行处理的.<br>去装订线扫描时 - 从中间页(为第一页)开始扫描.<br>这样譬如中间页是 11,12, 则 Page1(11,12), Page2(13,10), Page3(9,14)…<br>所以这个py把拖拽的文件都执行下述操作后分别输出为一个新的pdf.<br>原文件可供制册打印, 处理后的文件可用于电脑阅读.<ul>
+<li>分页: 把每页分成左右两页</li>
+<li>排序: 根据上述规则, 把分割的页面按真正的页序排序</li>
+</ul>
+</li>
+</ol>
+<p>2020-05-05追加</p>
+<ol>
+<li><a href="split&sort_reverse.py">split&amp;sort_reverse.py</a><br>上一个脚本的小改动, 以应付竖版装订书的页序(像古文那样从右往左读,翻页的册子)</li>
+<li><a href="attached/reverse.py">reverse.py</a><br>单纯倒序排列PDF页面.</li>
+<li><a href="delete.py">delete.py</a><br>删除指定页面, 仅处理单个文件. 删除页面以空格分隔指定.</li>
+</ol>
+<p>感觉有了python都懒得打开臃肿的PDF编辑软件了.</p>
+<p>分享py以供有同样需求的朋友, 或者当样例参考, 毕竟需求类似的话比自己从0开始考虑要省力很多.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://yougikou.github.io/2020/05/05/SelfPythonPDFTool/" data-id="clqwbhk250001f0psbr3v8xdg" data-title="Python PDF自制工具" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PDF/" rel="tag">PDF</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PDF-merge-split-rotate/" rel="tag">PDF merge, split, rotate</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tool/" rel="tag">Tool</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/" rel="tag">windows</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/30/SlowInternetInWin10/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          坑人的Windows 10上网限速/带宽变慢问题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/20/HowToDiff2ZipInGit/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Git - 如何在Windows git环境下提取两次commit的文件增量并打包成zip</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
