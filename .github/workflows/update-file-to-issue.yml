@@ -28,7 +28,7 @@ jobs:
       - name: Add Image to Issue
         uses: julien-deramond/update-issue-body@v1.1.0
         with:
-          issue-number: ${{ github.event.issue.number }}
+          issue-number: ${{ github.event.inputs.issueNumber }}
           body: |
             **Edit**: '![img](https://github.com/yougikou/yougikou.github.io/blob/master/assets/${{ github.event.inputs.issueNumber }}-image.jpg?raw=true)'
           edit-mode: append
