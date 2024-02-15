@@ -1,0 +1,40 @@
+name: Update File to Issue
+
+on:
+  workflow_dispatch:
+    inputs:
+      issueNumber:
+        description: 'Issue Number to attach image to'
+        required: true
+        type: number
+      fileUrl:
+        description: 'File URL to upload'
+        required: true
+        type: string
+
+jobs:
+  upload-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Download File
+        run: |
+          mkdir -p ./.github/workflows/assets
+          curl -L ${{ github.event.inputs.fileUrl }} -o ./.github/workflows/assets/image.jpg
+      
+      - name: Upload File to Repository
+        uses: github-actions-up-and-running/upload-to-repo@v1
+        with:
+          repository: ${{ github.repository }}
+          path: ./.github/workflows/assets/image.jpg
+          file-path: /assets/${{ github.run_id }}-image.jpg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Add Image to Issue
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: '${{ github.event.inputs.issueNumber }}'
+          body: '![img](https://github.com/${{ github.repository }}/blob/main/assets/${{ github.run_id }}-image.jpg?raw=true)'
+          token: ${{ secrets.GITHUB_TOKEN }}
