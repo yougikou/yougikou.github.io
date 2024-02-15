@@ -30,7 +30,7 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           file-path: ./.github/workflows/assets/image.jpg
           owner: yougikou
-          repo: ${{ github.repository }}
+          repo: yougikou.github.io
           remote-dir: /assets/${{ github.run_id }}-image.jpg
       - name: Add Image to Issue
         uses: julien-deramond/update-issue-body@v1.1.0
