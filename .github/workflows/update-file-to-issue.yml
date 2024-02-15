@@ -18,25 +18,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Download File
-        run: |
-          mkdir -p ./.github/workflows/assets
-          curl -L ${{ github.event.inputs.fileUrl }} -o ./.github/workflows/assets/image.jpg
-      - name: Setup node
-        uses: actions/setup-node@v4
       - name: Upload File to Repository
-        uses: LasyIsLazy/github-upload-action@v0.2.0
+        uses: wow-actions/download-upload@v1.1.0
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          file-path: ./.github/workflows/assets/image.jpg
-          owner: yougikou
-          repo: yougikou.github.io
-          remote-dir: /assets/${{ github.run_id }}-image.jpg
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          url: ${{ github.event.inputs.fileUrl }}
+          dir: /assets
+          filename: '${{ github.event.inputs.issueNumber }}-image.jpg'
       - name: Add Image to Issue
         uses: julien-deramond/update-issue-body@v1.1.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            **Edit**: '![img](https://github.com/yougikou/yougikou.github.io/blob/master/assets/${{ github.run_id }}-image.jpg?raw=true)'
+            **Edit**: '![img](https://github.com/yougikou/yougikou.github.io/blob/master/assets/${{ github.event.inputs.issueNumber }}-image.jpg?raw=true)'
           edit-mode: append
           append-separator: space
