@@ -23,7 +23,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           url: ${{ github.event.inputs.fileUrl }}
-          dir: /assets
+          dir: assets
           filename: ${{ github.event.inputs.issueNumber }}-image.jpg
       - name: Add Image to Issue
         uses: julien-deramond/update-issue-body@v1.1.0
