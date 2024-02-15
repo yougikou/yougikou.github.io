@@ -37,6 +37,6 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            **Edit**: '![img](https://github.com/${{ github.repository }}/blob/main/assets/${{ github.run_id }}-image.jpg?raw=true)'
+            **Edit**: '![img](https://github.com/yougikou/yougikou.github.io/blob/master/assets/${{ github.run_id }}-image.jpg?raw=true)'
           edit-mode: append
           append-separator: space
