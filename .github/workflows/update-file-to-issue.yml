@@ -17,24 +17,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      
+        uses: actions/checkout@v4
       - name: Download File
         run: |
           mkdir -p ./.github/workflows/assets
           curl -L ${{ github.event.inputs.fileUrl }} -o ./.github/workflows/assets/image.jpg
-      
+      - name: Setup node
+        uses: actions/setup-node@v4
       - name: Upload File to Repository
-        uses: github-actions-up-and-running/upload-to-repo@v1
+        uses: LasyIsLazy/github-upload-action@v0.2.0
         with:
-          repository: ${{ github.repository }}
-          path: ./.github/workflows/assets/image.jpg
-          file-path: /assets/${{ github.run_id }}-image.jpg
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          file-path: ./.github/workflows/assets/image.jpg
+          owner: yougikou
+          repo: ${{ github.repository }}
+          remote-dir: /assets/${{ github.run_id }}-image.jpg
       - name: Add Image to Issue
-        uses: peter-evans/create-or-update-comment@v1
+        uses: julien-deramond/update-issue-body@v1.1.0
         with:
-          issue-number: '${{ github.event.inputs.issueNumber }}'
-          body: '![img](https://github.com/${{ github.repository }}/blob/main/assets/${{ github.run_id }}-image.jpg?raw=true)'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Edit**: '![img](https://github.com/${{ github.repository }}/blob/main/assets/${{ github.run_id }}-image.jpg?raw=true)'
+          edit-mode: append
+          append-separator: space
