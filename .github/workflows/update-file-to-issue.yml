@@ -14,7 +14,7 @@ jobs:
       - name: Extract GeoJSON URL
         id: extract-url
         run: |
-          echo "GEOJSON_URL=$(echo '${{ github.event.issue.body }}' | grep -oP 'geojson: \'\[file\]\((.*?)\)' | sed -n "s/geojson: '\[file\]\((.*?)\)/\1/p")" >> $GITHUB_ENV
+          echo "GEOJSON_URL=$(echo '${{ github.event.issue.body }}' | grep -oP "geojson: '\[file\]\((.*?)\)" | sed -n "s/geojson: '\[file\]\((.*?)\)/\1/p")" >> $GITHUB_ENV
         shell: bash
       
       - name: Download and Upload GeoJSON File
