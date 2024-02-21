@@ -2,7 +2,7 @@ name: Download and Update GeoJSON
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened]
 
 jobs:
   download-and-update-geojson:
