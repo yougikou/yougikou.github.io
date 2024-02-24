@@ -29,15 +29,15 @@ jobs:
           file-path: ./${{ github.event.issue.number }}-route.geojson
           owner: yougikou
           repo: yougikou.github.io
-          remote-dir: /assets
-          branch-name: master
+          remote-dir: /geojson
+          branch-name: assets
       
       - name: Replace GeoJSON URL in Issue Body
         uses: actions/github-script@v7.0.1
         with:
           script: |
             const oldBody = `${{ github.event.issue.body }}`;
-            const newUrl = "https://github.com/yougikou/yougikou.github.io/blob/master/assets/${{ github.event.issue.number }}-route.geojson?raw=true";
+            const newUrl = "https://github.com/yougikou/yougikou.github.io/blob/assets/geojson/${{ github.event.issue.number }}-route.geojson?raw=true";
             const newBody = oldBody.replace(/geojson: \'\[file\]\(.*?\)'/g, `geojson: '[file](${newUrl})'`);
             await github.rest.issues.update({
               owner: context.repo.owner,
