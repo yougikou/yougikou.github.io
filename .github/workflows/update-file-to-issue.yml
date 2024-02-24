@@ -18,6 +18,9 @@ jobs:
           echo "GEOJSON_URL=${GEOJSON_URL}" >> $GITHUB_ENV
         shell: bash
 
+      - name: Create Downloads Directory
+        run: mkdir -p ./downloads
+        
       - name: Download File
         run: |
           curl -X GET '${{ env.GEOJSON_URL }}' -H 'accept: */*' -o ./downloads/${{ github.event.issue.number }}-route.geojson
