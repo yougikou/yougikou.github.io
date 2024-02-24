@@ -33,6 +33,7 @@ jobs:
           owner: yougikou
           repo: yougikou.github.io
           remote-dir: /assets
+          branch-name: master
       
       - name: Replace GeoJSON URL in Issue Body
         uses: actions/github-script@v7.0.1
