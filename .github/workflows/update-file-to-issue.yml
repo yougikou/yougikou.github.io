@@ -17,15 +17,20 @@ jobs:
           GEOJSON_URL=$(echo "${{ github.event.issue.body }}" | grep -oP "geojson: '\[file\]\((.*?)\)'" | sed -n "s/geojson: '\[file\]\((.*?)\)'/\1/p")
           echo "GEOJSON_URL=${GEOJSON_URL}" >> $GITHUB_ENV
         shell: bash
-      
-      - name: Download and Upload GeoJSON File
-        uses: wow-actions/download-upload@v1.1.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          url: ${{ env.GEOJSON_URL }}
-          dir: assets
-          filename: ${{ github.event.issue.number }}-route.geojson
 
+      - name: Download File
+        run: |
+          curl -X GET '${{ env.GEOJSON_URL }}' -H 'accept: */*' -o ./downloads/${{ github.event.issue.number }}-route.geojson
+
+      - name: Upload to GitHub
+        uses: LasyIsLazy/github-upload-action@v0.2.0
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          file-path: ./downloads/${{ github.event.issue.number }}-route.geojson
+          owner: yougikou
+          repo: yougikou.github.io
+          remote-dir: /assets
+      
       - name: Replace GeoJSON URL in Issue Body
         uses: actions/github-script@v7.0.1
         with:
