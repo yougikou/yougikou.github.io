@@ -17,19 +17,16 @@ jobs:
           GEOJSON_URL=$(echo "${{ github.event.issue.body }}" | grep "geojson:" | sed -n "s/^.*geojson: '\[file\](\(.*\))'.*$/\1/p")
           echo "GEOJSON_URL=${GEOJSON_URL}" >> $GITHUB_ENV
         shell: bash
-
-      - name: Create Downloads Directory
-        run: mkdir -p ./downloads
         
       - name: Download File
         run: |
-          curl -X GET '${{ env.GEOJSON_URL }}' -H 'accept: */*' -o ./downloads/${{ github.event.issue.number }}-route.geojson
+          curl -X GET '${{ env.GEOJSON_URL }}' -H 'accept: */*' -o ./${{ github.event.issue.number }}-route.geojson
 
       - name: Upload to GitHub
         uses: LasyIsLazy/github-upload-action@v0.2.0
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
-          file-path: ./downloads/${{ github.event.issue.number }}-route.geojson
+          file-path: ./${{ github.event.issue.number }}-route.geojson
           owner: yougikou
           repo: yougikou.github.io
           remote-dir: /assets
