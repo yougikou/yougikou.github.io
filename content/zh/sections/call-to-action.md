@@ -1,8 +1,8 @@
 ---
-enable: true
-title: "准备好用Hugo构建您的下一个项目了吗？"
+enable: false
+title: "跳转到我的博客文章"
 image: "/images/call-to-action.png"
-description: "体验Hugoplate和Hugo带来的Web开发未来。轻松灵活地构建闪电般快速的静态网站。"
+description: ""
 button:
   enable: true
   label: "分叉部署并在线编辑 🚀"

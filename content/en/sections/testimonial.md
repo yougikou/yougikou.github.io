@@ -1,29 +1,24 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "Recently Interested Topics"
+description: "AI agent analysis updates based on my recent research interests during spare time, may not reflect my actual situation."
 
-# Testimonials
+# Recommendations
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "OpenClaw"
+    designation: "Multi-Agent Personal Assistant / Automation Orchestration Platform"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Recently, I've been focusing on OpenClaw for multi-agent collaboration, Discord routing, cron inspection, MCP integration, and local model switching. This direction is clearly the current core interest point, especially suitable for continuing to refine the workflow of 'one main assistant + multiple specialized agents + multi-channel integration'. GitHub: https://github.com/openclaw/openclaw"
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "minecraft-mcp-server"
+    designation: "Minecraft Bot / MCP Control Layer"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "I've spent a lot of effort on Minecraft bot, Mineflayer, MCP server, AI agent conversation, and persistent operation. This project aligns well with current goals: getting ClawBot into servers, monitoring chat, and routing conversations to dedicated AI agents. GitHub: https://github.com/yuniko-software/minecraft-mcp-server"
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "offline-cards"
+    designation: "LAN Card Game / PWA Product Design Experiment"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Recently, I've invested deeply in this project, with the focus shifting from 'can it be played' to 'interaction fluency, homepage scalability, mobile single-screen adaptation, modern game UI aesthetics'. This shows not only writing features but also seriously polishing the product feel, making it one of the current clearly continuous investment directions. GitHub: https://github.com/yougikou/offline-cards"
 
 # don't create a separate page
 build:

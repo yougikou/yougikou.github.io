@@ -1,29 +1,24 @@
 ---
 enable: true
-title: "用户对Hugoplate的评价"
-description: "不要只听我们说 - 听听我们满意用户的心声！查看下面的一些评价，看看其他人对Hugoplate的评价。"
+title: "最近感兴趣的内容"
+description: "AI代理根据本人最近的业余时间研究方向作出的分析更新，可能不是本人真实情况。"
 
 # 推荐
 testimonials:
-  - name: "张三"
-    designation: "Web设计师"
+  - name: "OpenClaw"
+    designation: "多代理个人助理 / 自动化编排平台"
     avatar: "/images/avatar-sm.png"
-    content: "Hugoplate让我能够快速构建漂亮的静态网站。模板非常专业，文档也很清晰。"
+    content: "最近一直在围绕 OpenClaw 做多代理协作、Discord 路由、cron 巡检、MCP 接入和本地模型切换。这个方向明显是当前最核心的兴趣点，尤其适合继续折腾“一个主助理 + 多个专职代理 + 多渠道接入”的工作流。GitHub: https://github.com/openclaw/openclaw"
 
-  - name: "李四"
-    designation: "前端开发者"
+  - name: "minecraft-mcp-server"
+    designation: "Minecraft Bot / MCP 控制层"
     avatar: "/images/avatar-sm.png"
-    content: "作为一个Hugo新手，我发现Hugoplate非常容易上手。它提供了我需要的一切，让我能够专注于内容创作。"
+    content: "花了很多精力在 Minecraft bot、Mineflayer、MCP server、AI 代理对话和常驻运行这条线上。这个项目很贴合现在的目标：让 ClawBot 进入服务器、监听聊天，并把对话转给专用 AI 代理。GitHub: https://github.com/yuniko-software/minecraft-mcp-server"
 
-  - name: "王五"
-    designation: "技术博主"
+  - name: "offline-cards"
+    designation: "局域网卡牌游戏 / PWA 产品设计实验"
     avatar: "/images/avatar-sm.png"
-    content: "我喜欢Hugoplate的简洁设计。它加载速度快，SEO友好，正是我博客需要的。"
-
-  - name: "赵六"
-    designation: "全栈开发者"
-    avatar: "/images/avatar-sm.png"
-    content: "Hugoplate的多语言支持非常出色。我可以轻松地为我的国际受众创建多语言内容。"
+    content: "最近对这个项目投入很深，重点已经从“能不能玩”转到“交互流畅度、首页扩展性、移动端单屏适配、现代游戏 UI 审美”。这说明不仅在写功能，也在认真打磨产品感，是当前明显持续投入的方向之一。GitHub: https://github.com/yougikou/offline-cards"
 
 # don't create a separate page
 build:
