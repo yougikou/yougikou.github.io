@@ -2,13 +2,16 @@
 title: "把 AI 的工作边界收紧到当前 workspace"
 date: 2026-04-05T14:44:00+09:00
 author: "Giko"
-image: "/images/posts/2020-11-08-ReactIndex.jpg"
+image: "https://img.freepik.com/premium-vector/minimalist-illustration-clean-organized-workspace-with-laptop-desk-lamp-plants-office-supplies_9975-74840.jpg"
 categories: ["技术", "工作流"]
 tags: ["OpenClaw", "workspace", "效率", "边界"]
 draft: false
 ---
 
 我最近给自己的 AI 助理加了一个很简单但很重要的规矩：**默认只在当前 workspace 里干活**。
+
+![一个简洁的工作区示意图](https://img.freepik.com/premium-vector/minimalist-illustration-clean-organized-workspace-with-laptop-desk-lamp-plants-office-supplies_9975-74840.jpg)
+
 
 听起来像是一个小约束，但实际效果很明显：
 
