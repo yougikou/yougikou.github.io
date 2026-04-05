@@ -2,7 +2,7 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Deploy only on pushes to main. PRs can be used for validation elsewhere.
   push:
     branches: ["main"]
 
