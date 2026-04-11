@@ -67,11 +67,6 @@ I want drafting and publishing to stay clearly separated. A draft should stay a 
 
 ## What I verified
 
-After the setup, I confirmed two things:
-
-- Hermes Agent can work on a fixed cadence
-- when the source material is thin, it helps me find a direction instead of forcing a finished post
-
 That turns the blog workflow into something repeatable, not a one-off setup.
 
 In short: use AI agents flexibly as proposal engines so human output becomes more targeted and proactive, combining the agent’s initiative with human creativity as much as possible.
