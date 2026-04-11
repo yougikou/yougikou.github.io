@@ -73,3 +73,5 @@ After the setup, I confirmed two things:
 - when the source material is thin, it helps me find a direction instead of forcing a finished post
 
 That turns the blog workflow into something repeatable, not a one-off setup.
+
+In short: use AI agents flexibly as proposal engines so human output becomes more targeted and proactive, combining the agent’s initiative with human creativity as much as possible.
