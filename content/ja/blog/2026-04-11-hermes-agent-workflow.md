@@ -2,7 +2,7 @@
 title: "Hermes Agent を固定リズムのブログ助手として設定した方法"
 date: 2026-04-11T20:00:26+09:00
 author: "Giko"
-image: "https://img.freepik.com/premium-vector/ai-coding-robot-assistant-programming-code-debugging-vector-illustration-concept_694862-52.jpg?w=1800"
+image: "https://v3b.fal.media/files/b/0a95d375/oVj88OmPKQZApfFlYDJjx_ifaHXq5z.png"
 categories: ["ワークフロー", "自動化"]
 tags: ["Hermes Agent", "cronjob", "workflow", "Hugo", "GitHub Pages"]
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 今回、Hermes Agent とブログのワークフローを組み直した。やり方は単純で、まず長期的なルールを記憶させ、次に実行タイミングを固定し、素材が薄い週の扱いを決め、最後に公開フローを固めた。
 
-![Hermes Agent とブログワークフローのイメージ](https://img.freepik.com/premium-vector/ai-coding-robot-assistant-programming-code-debugging-vector-illustration-concept_694862-52.jpg?w=1800)
+![Hermes Agent とブログワークフローのイメージ](https://v3b.fal.media/files/b/0a95d375/oVj88OmPKQZApfFlYDJjx_ifaHXq5z.png)
 
 ## まず長期ルールを記憶させる
 
