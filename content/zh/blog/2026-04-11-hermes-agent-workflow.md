@@ -2,7 +2,7 @@
 title: "我如何把 Hermes Agent 配成固定节奏的博客助手"
 date: 2026-04-11T20:00:26+09:00
 author: "Giko"
-image: "https://img.freepik.com/premium-vector/ai-coding-robot-assistant-programming-code-debugging-vector-illustration-concept_694862-52.jpg?w=1800"
+image: "https://v3b.fal.media/files/b/0a95d375/oVj88OmPKQZApfFlYDJjx_ifaHXq5z.png"
 categories: ["工作流", "自动化"]
 tags: ["Hermes Agent", "cronjob", "workflow", "Hugo", "GitHub Pages"]
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 我这次把 Hermes Agent 和博客工作流重新配了一遍。做法不复杂，主要是四步：先记住长期规则，再固定执行时间，然后处理素材不足的情况，最后把发布流程锁定下来。
 
-![Hermes Agent 和博客工作流的概念插图](https://img.freepik.com/premium-vector/ai-coding-robot-assistant-programming-code-debugging-vector-illustration-concept_694862-52.jpg?w=1800)
+![Hermes Agent 和博客工作流的概念插图](https://v3b.fal.media/files/b/0a95d375/oVj88OmPKQZApfFlYDJjx_ifaHXq5z.png)
 
 ## 先把长期规则写进去
 
