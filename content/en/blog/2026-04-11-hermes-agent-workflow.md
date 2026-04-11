@@ -2,7 +2,7 @@
 title: "How I Configured Hermes Agent as a Fixed-Rhythm Blog Assistant"
 date: 2026-04-11T20:00:26+09:00
 author: "Giko"
-image: "https://img.freepik.com/premium-vector/ai-coding-robot-assistant-programming-code-debugging-vector-illustration-concept_694862-52.jpg?w=1800"
+image: "https://v3b.fal.media/files/b/0a95d375/oVj88OmPKQZApfFlYDJjx_ifaHXq5z.png"
 categories: ["Workflow", "Automation"]
 tags: ["Hermes Agent", "cronjob", "workflow", "Hugo", "GitHub Pages"]
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 I reconfigured Hermes Agent and my blog workflow in a pretty simple way: save the long-term rules first, lock the schedule next, handle thin-source weeks with topic generation, and keep publishing on a fixed Git flow.
 
-![Concept illustration for Hermes Agent and a blog workflow](https://img.freepik.com/premium-vector/ai-coding-robot-assistant-programming-code-debugging-vector-illustration-concept_694862-52.jpg?w=1800)
+![Concept illustration for Hermes Agent and a blog workflow](https://v3b.fal.media/files/b/0a95d375/oVj88OmPKQZApfFlYDJjx_ifaHXq5z.png)
 
 ## Save the long-term rules first
 
