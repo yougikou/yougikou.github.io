@@ -1,0 +1,62 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.55" stop-color="#131A2E"/>
+      <stop offset="1" stop-color="#1B243A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#151D31"/>
+      <stop offset="1" stop-color="#0E1527"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1260" cy="180" r="180" fill="#5EEAD4" fill-opacity="0.08" filter="url(#blur)"/>
+  <circle cx="340" cy="760" r="220" fill="#F59E0B" fill-opacity="0.10" filter="url(#blur)"/>
+
+  <rect x="86" y="84" width="1428" height="732" rx="28" fill="#0A1020" fill-opacity="0.35" stroke="rgba(255,255,255,0.06)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="132" width="760" height="540" rx="22" fill="url(#panel)"/>
+    <rect x="120" y="132" width="760" height="54" rx="22" fill="#1D2740"/>
+    <circle cx="158" cy="159" r="8" fill="#F87171"/>
+    <circle cx="184" cy="159" r="8" fill="#FBBF24"/>
+    <circle cx="210" cy="159" r="8" fill="#34D399"/>
+    <text x="250" y="167" fill="#CBD5E1" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">gateway.log</text>
+
+    <text x="156" y="236" fill="#94A3B8" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="26">$ launchctl kickstart -k gui/501/ai.hermes.gateway</text>
+    <text x="156" y="286" fill="#FCA5A5" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="26">[Errno 24] Too many open files</text>
+    <text x="156" y="332" fill="#93C5FD" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="24">Warning: Failed to load config.yaml</text>
+    <text x="156" y="378" fill="#CBD5E1" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="24">ulimit -n = 1024</text>
+    <text x="156" y="424" fill="#CBD5E1" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="24">gateway pid fds ≈ 91</text>
+    <text x="156" y="470" fill="#CBD5E1" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="24">hermes pid fds ≈ 97</text>
+    <text x="156" y="534" fill="#FDE68A" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="24">NameError: ensure_open_file_limit not defined</text>
+    <text x="156" y="580" fill="#94A3B8" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">symptom != root cause</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="930" y="200" width="520" height="360" rx="22" fill="#11192C"/>
+    <rect x="930" y="200" width="520" height="52" rx="22" fill="#1A2440"/>
+    <text x="962" y="234" fill="#CBD5E1" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">ai.hermes.gateway.plist</text>
+    <text x="966" y="304" fill="#7DD3FC" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">&lt;key&gt;ProgramArguments&lt;/key&gt;</text>
+    <text x="966" y="344" fill="#C4B5FD" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">&lt;key&gt;KeepAlive&lt;/key&gt;</text>
+    <text x="966" y="384" fill="#C4B5FD" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">&lt;key&gt;EnvironmentVariables&lt;/key&gt;</text>
+    <text x="966" y="424" fill="#FDE68A" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22">? launchd limit vs shell limit</text>
+    <text x="966" y="464" fill="#94A3B8" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="20">still validating the right plist change</text>
+  </g>
+
+  <rect x="120" y="712" width="1330" height="4" rx="2" fill="url(#accent)" fill-opacity="0.9"/>
+  <text x="120" y="760" fill="white" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-weight="700" font-size="52">Too Many Open Files?</text>
+  <text x="120" y="815" fill="#CBD5E1" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28">Hermes / OpenClaw debugging notes: symptoms first, root cause still under validation.</text>
+</svg>
