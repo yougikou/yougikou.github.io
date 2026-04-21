@@ -1,0 +1,61 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0A0F1F"/>
+  <defs>
+    <linearGradient id="panel" x1="180" y1="130" x2="1420" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10192F"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <circle cx="240" cy="720" r="210" fill="#38BDF8" fill-opacity="0.08" filter="url(#blur)"/>
+  <circle cx="1370" cy="180" r="170" fill="#8B5CF6" fill-opacity="0.10" filter="url(#blur)"/>
+
+  <rect x="120" y="90" width="1360" height="720" rx="36" fill="url(#panel)" stroke="#334155" stroke-width="2"/>
+
+  <rect x="210" y="210" width="560" height="320" rx="26" fill="#09101D" stroke="#334155" stroke-width="2"/>
+  <rect x="250" y="255" width="480" height="22" rx="11" fill="#38BDF8" fill-opacity="0.88"/>
+  <rect x="250" y="300" width="390" height="15" rx="7.5" fill="#64748B"/>
+  <rect x="250" y="332" width="320" height="15" rx="7.5" fill="#475569"/>
+  <rect x="250" y="364" width="430" height="15" rx="7.5" fill="#334155"/>
+  <rect x="250" y="412" width="160" height="70" rx="18" fill="#13203A" stroke="#1E293B"/>
+  <text x="330" y="456" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600">Blueprint</text>
+  <rect x="435" y="412" width="130" height="70" rx="18" fill="#13203A" stroke="#1E293B"/>
+  <text x="500" y="456" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600">CI/CD</text>
+  <rect x="590" y="412" width="120" height="70" rx="18" fill="#13203A" stroke="#1E293B"/>
+  <text x="650" y="456" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600">Tests</text>
+
+  <rect x="930" y="180" width="170" height="150" rx="24" fill="#111827" stroke="url(#blue)" stroke-width="3"/>
+  <rect x="1140" y="180" width="170" height="150" rx="24" fill="#111827" stroke="url(#violet)" stroke-width="3"/>
+  <rect x="1035" y="390" width="170" height="150" rx="24" fill="#111827" stroke="url(#green)" stroke-width="3"/>
+
+  <text x="1015" y="248" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700">PM</text>
+  <text x="1015" y="286" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">priority</text>
+
+  <text x="1225" y="238" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700">Dev</text>
+  <text x="1225" y="276" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">scope</text>
+
+  <text x="1120" y="448" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700">Test</text>
+  <text x="1120" y="486" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">ground truth</text>
+
+  <path d="M930 255H820C789.072 255 764 280.072 764 311V370" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M1140 255H840C802.444 255 772 285.444 772 323V370" stroke="#A78BFA" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M1035 465H840C802.444 465 772 434.556 772 397V370" stroke="#22C55E" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+
+  <text x="200" y="700" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="56" font-weight="700">Stabilize the AI coding loop</text>
+  <text x="200" y="760" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30">多代理分工 + CI/CD / 测试反馈闭环，才是真正的稳定基础</text>
+</svg>
