@@ -100,3 +100,5 @@ Before those two issues are solved, “automation” often just means scaling co
 ## Conclusion
 
 If you want an AI coding workflow to stabilize, the key is not adding more prompt engineering. It is solving two basic problems first: prevent a single agent from looping on the same blocker, and close the toolchain feedback loop as early as possible.
+
+The first decides whether the workflow gets dragged down by a single local problem. The second decides whether the feedback it trusts is actually a real signal from the world. Once those two things are in place, AI coding stops being something that merely looks busy and starts becoming something that truly produces continuously.
