@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0f0f1a"/>
+  
+  <!-- Background grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#1a1a30" stroke-width="0.5"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#1a1a30" stroke-width="0.5"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#1a1a30" stroke-width="0.5"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="#1a1a30" stroke-width="0.5"/>
+
+  <!-- Title -->
+  <text x="600" y="70" text-anchor="middle" fill="#e0e0f0" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" letter-spacing="1">Workslop vs Vibe Coding</text>
+  <text x="600" y="110" text-anchor="middle" fill="#8888aa" font-family="system-ui, -apple-system, sans-serif" font-size="16" letter-spacing="2">OUTPUT ORIENTED vs GOAL ORIENTED</text>
+
+  <!-- Left: Workslop side -->
+  <rect x="40" y="140" width="340" height="460" rx="12" fill="#1a0a20" stroke="#442244" stroke-width="1.5"/>
+  <text x="210" y="180" text-anchor="middle" fill="#ff6688" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">WORLSLOP</text>
+  <text x="210" y="205" text-anchor="middle" fill="#664466" font-family="system-ui, -apple-system, sans-serif" font-size="12">認知汚染 · Cognitive Pollution</text>
+
+  <!-- Workslop icons -->
+  <rect x="70" y="230" width="280" height="45" rx="6" fill="#2a1020"/>
+  <text x="210" y="258" text-anchor="middle" fill="#a05577" font-family="system-ui, -apple-system, sans-serif" font-size="13">📄 AI 生成的华丽报告</text>
+
+  <rect x="70" y="285" width="280" height="45" rx="6" fill="#2a1020"/>
+  <text x="210" y="313" text-anchor="middle" fill="#a05577" font-family="system-ui, -apple-system, sans-serif" font-size="13">🔄 领导用 AI 读报告</text>
+
+  <rect x="70" y="340" width="280" height="45" rx="6" fill="#2a1020"/>
+  <text x="210" y="368" text-anchor="middle" fill="#a05577" font-family="system-ui, -apple-system, sans-serif" font-size="13">🤖 AI 总结 AI 内容</text>
+
+  <!-- Waste icon -->
+  <text x="210" y="440" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="40">🗑️</text>
+  <text x="210" y="480" text-anchor="middle" fill="#663344" font-family="system-ui, -apple-system, sans-serif" font-size="13">没人真正思考</text>
+  <text x="210" y="500" text-anchor="middle" fill="#663344" font-family="system-ui, -apple-system, sans-serif" font-size="13">只在乎"看起来专业"</text>
+
+  <!-- Divider: VS -->
+  <text x="415" y="350" text-anchor="middle" fill="#444466" font-family="system-ui, -apple-system, sans-serif" font-size="60" font-weight="800">VS</text>
+
+  <!-- Right: Vibe Coding side -->
+  <rect x="820" y="140" width="340" height="460" rx="12" fill="#0a1a20" stroke="#224444" stroke-width="1.5"/>
+  <text x="990" y="180" text-anchor="middle" fill="#44ddbb" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">VIBE CODING</text>
+  <text x="990" y="205" text-anchor="middle" fill="#446666" font-family="system-ui, -apple-system, sans-serif" font-size="12">目標指向 · Goal-Oriented</text>
+
+  <!-- Vibe coding icons -->
+  <rect x="850" y="230" width="280" height="45" rx="6" fill="#102a20"/>
+  <text x="990" y="258" text-anchor="middle" fill="#55aa88" font-family="system-ui, -apple-system, sans-serif" font-size="13">🎯 产品愿景 → 意图表达</text>
+
+  <rect x="850" y="285" width="280" height="45" rx="6" fill="#102a20"/>
+  <text x="990" y="313" text-anchor="middle" fill="#55aa88" font-family="system-ui, -apple-system, sans-serif" font-size="13">⚙️ AI 即时实现 + 迭代反馈</text>
+
+  <rect x="850" y="340" width="280" height="45" rx="6" fill="#102a20"/>
+  <text x="990" y="368" text-anchor="middle" fill="#55aa88" font-family="system-ui, -apple-system, sans-serif" font-size="13">✅ 测试验证 → 架构把关</text>
+
+  <!-- Result icon -->
+  <text x="990" y="440" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="40">🚀</text>
+  <text x="990" y="480" text-anchor="middle" fill="#336655" font-family="system-ui, -apple-system, sans-serif" font-size="13">真正的产品迭代</text>
+  <text x="990" y="500" text-anchor="middle" fill="#336655" font-family="system-ui, -apple-system, sans-serif" font-size="13">握在手里的方向盘</text>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="610" text-anchor="middle" fill="#555577" font-family="system-ui, -apple-system, sans-serif" font-size="13" letter-spacing="1">流程不是效率的限制，而是失控的护栏</text>
+</svg>
