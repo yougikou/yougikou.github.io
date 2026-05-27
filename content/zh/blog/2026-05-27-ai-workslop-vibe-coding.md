@@ -1,5 +1,5 @@
 ---
-title: "AI 时代的职场陷阱：警惕"工作垃圾"（Workslop）"
+title: "AI 时代的职场陷阱：警惕“工作垃圾”（Workslop）"
 date: 2026-05-27T20:30:00+09:00
 author: "Giko"
 image: "/images/posts/ai-workslop-vibe-coding/cover.svg"
