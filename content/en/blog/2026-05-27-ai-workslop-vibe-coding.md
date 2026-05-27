@@ -1,5 +1,5 @@
 ---
-title: "The Workplace Trap in the AI Era: Beware of "Workslop""
+title: 'The Workplace Trap in the AI Era: Beware of "Workslop"'
 date: 2026-05-27T20:30:00+09:00
 author: "Giko"
 image: "/images/posts/ai-workslop-vibe-coding/cover.svg"
