@@ -44,6 +44,7 @@
             {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
             {{ .Content }}
           </div>
+          {{ partial "adsense/display-ad.html" (dict "Slot" site.Params.adsense.article_bottom_slot "Class" "mb-10") }}
           <div class="row items-start justify-between">
             {{ $tags:= .Params.tags }}
             {{ if $tags }}

@@ -127,11 +127,19 @@ Notable sections:
 - Branding: `favicon`, `logo`, `logo_darkmode`, `logo_width`, `logo_height`, `logo_webp`.
 - Theme: `navbar_fixed`, `theme_switcher`, `theme_default` (light|dark|system).
 - Sections: `mainSections` (used for listing content like blog on various pages/widgets).
-- Tracking & Ads: `google_tag_manager`, `google_adsense`.
+- Tracking & Ads: `google_tag_manager`, `google_adsense`, `[adsense]`.
 - Inline script: `custom_script`.
 - Feature Tables: `[preloader]`, `[navigation_button]`, `[search]`, `[announcement]`, `[metadata]`, `[site_verification]`, `[cookies]`, `[mermaid]`, `[widgets]`, `[google_map]`, `[subscription]`.
 
 Enable/disable features with `enable = true|false` inside each table.
+
+AdSense revenue ads require all of these values in `config/_default/params.toml`:
+
+- `google_adsense`: Publisher ID from AdSense, for example `ca-pub-xxxxxxxxxxxxxxxx`.
+- `[adsense].article_bottom_slot`: Display ad unit slot shown after blog article content.
+- `[adsense].blog_list_slot`: Display ad unit slot shown inside the blog listing.
+
+The templates intentionally render nothing until both the publisher ID and a slot ID are configured.
 
 ### 3.3 Menus (`menus.en.toml`)
 

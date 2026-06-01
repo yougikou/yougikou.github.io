@@ -1,0 +1,16 @@
+{{- $client := site.Params.google_adsense -}}
+{{- $slot := .Slot | default "" -}}
+{{- if and $client $slot -}}
+  <div class="{{ .Class | default `my-8` }}">
+    <ins
+      class="adsbygoogle block"
+      style="display:block"
+      data-ad-client="{{ $client }}"
+      data-ad-slot="{{ $slot }}"
+      data-ad-format="{{ .Format | default `auto` }}"
+      data-full-width-responsive="{{ .FullWidthResponsive | default `true` }}"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+{{- end -}}
