@@ -23,11 +23,17 @@ mainSections = ["blog"]
 contact_form_action = "https://airform.io/yougikou@gmail.com" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
-google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
+google_adsense = "ca-pub-7435544862471526" # required for AdSense revenue
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
 copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
+
+# Google AdSense display ad slots.
+# Create these ad units in AdSense, then paste their numeric data-ad-slot IDs here.
+[adsense]
+article_bottom_slot = ""
+blog_list_slot = ""
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

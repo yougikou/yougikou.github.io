@@ -1,66 +1,63 @@
 ---
-title: 'The Workplace Trap in the AI Era: Beware of "Workslop"'
-date: 2026-05-27T20:30:00+09:00
+title: 'Debloating Is Not a Choice; Performance Forces It'
+date: 2026-06-09T08:40:00+09:00
 author: "Giko"
 image: "/images/posts/ai-workslop-vibe-coding/cover.svg"
-categories: ["AI", "Workplace", "Opinion"]
-tags: ["Workslop", "Vibe Coding", "AI Agent", "Cognitive Pollution", "Workflow"]
+categories: ["Engineering", "Performance", "Languages"]
+tags: ["Zig", "Mojo", "Rust", "Go", "C++", "DSL", "Abstraction", "Performance", "Startup Time", "Cloud Cost"]
 draft: false
 ---
 
-There is an absurd play unfolding in today's workplace: employees write reports with AI, managers review reports with AI, and clients summarize those reviews with AI. Everyone is enthusiastically discussing content that nobody actually thought through.
+Software has a familiar illusion: take a simple mathematical operation, bury it under six layers of indirection, and then call the result “engineering.”
 
-![Workslop vs Vibe Coding comparison](/images/posts/ai-workslop-vibe-coding/cover.svg)
+The problem is that benchmarks do not care about our vocabulary. Once a real workload hits the system, the stopwatch exposes everything. If something is one order of magnitude slower, that is not a style disagreement. It is a cost problem.
 
-## The Phenomenon: Cognitive Pollution Dressed as Competence
+So over time, senior engineers quietly start tearing down the rules they were once told to worship. Junior engineers, meanwhile, are still studying those same rules for interviews, as if they were timeless law.
 
-The *Harvard Business Review* calls this **Workslop** — content that is logically structured and beautifully formatted, yet completely vacuous. It is a full banquet made of plastic: looks impressive, offers nothing.
+## Rules are not principles, and abstraction is not religion
 
-AI has not created value. It has dramatically increased the output efficiency of low-value work. Garbage content is no longer limited by human stamina — it has metastasized into a form of cognitive pollution. The "very professional" weekly reports, proposals, and emails you scroll past every day? They are likely AI-polished nonsense.
+A rule that sits above common sense and real performance data is not a principle. It is superstition.
 
-## The Root: A Conspiracy of Performative Work
+When a system meets production load, every abstraction has to answer the same question: whose time did you save, and whose cost did you simply move elsewhere?
 
-What makes AI dangerous is not just that it can mimic a professional tone. It perfectly satisfies a pathological need in modern workplaces: people care more about *looking like they are solving problems* than *actually solving them*.
+Debloating is not a fashionable slogan. It is a correction forced by reality. You can keep praising architectural elegance in design reviews, but what actually decides whether a system survives are startup time, memory footprint, tail latency, cloud bills, and the pager that goes off at 3 a.m.
 
-Once "submitted a proposal" is mistaken for "completed the work", the office becomes a content factory that only cares about output, never about purpose. The worst part? Nobody in this play is a villain. Everyone is just "improving efficiency" — without noticing that the direction of that efficiency is wrong.
+## Why these new languages keep appearing
 
-## Why Vibe Coding Does Not Become Workslop
+If a language is simple enough that you can fully understand its boundaries, semantics, and trade-offs, it gives you a kind of clarity that modern stacks often lack. Zig is a good example: static binaries, small artifacts, direct behavior, and a good fit for pulling simple things back out of layers of glue.
 
-Compare the Workslop phenomenon with the current trend of **Vibe Coding**, and a crucial difference emerges: Vibe Coding is goal-oriented co-creation, while process-less AI Coding is output-oriented garbage generation.
+A runtime like Bun choosing Zig to rewrite parts of the Node ecosystem is not about being trendy. It is about escaping a slow execution chain and a heavy historical burden. People got tired of waiting, and they got tired of turning straightforward problems into rituals.
 
-### What Is Vibe Coding?
+Mojo did not appear by accident either. For the last fifteen years, the Python data-science stack has hidden C, C++, and Fortran behind multiple layers of abstraction. Importing NumPy can drag a large amount of native code into memory just to do the numerical work that should have been direct. Mojo is really asking a plain question: can we stop hiding performance behind layers?
 
-Vibe Coding is not "code whatever comes to mind." It is high-level logic collaboration through natural language. The developer stops wrestling with syntax details and instead operates like a conductor — articulating clear intent, iterating on feedback, and verifying logic, while the AI turns those ideas into running systems.
+## Not hype — infrastructure is changing
 
-The core trait: "vibe" means "collaboration." You focus on product vision, architectural direction, and user feedback. The AI acts as a super-powered pair programmer that instantly realizes your logical intentions.
+Rust keeps getting chosen by infrastructure teams for one simple reason: it puts safety and performance on the same table instead of forcing you to sacrifice one for the other.
 
-### Why Does Vibe Coding Work?
+Cloudflare's Pingora, Discord's message-read-state service, and Microsoft's Rust migrations in Windows kernel-related modules are not keynote theater. They are choices made under real pressure by teams that needed something stronger than slogans.
 
-Vibe Coding works because AI has crossed two thresholds:
+Go takes a different path. It is not flashy, and it does not try to be. But it keeps improving garbage collection, shrinking binary size, and making services start quickly. Many teams that once defaulted to the JVM eventually started caring about cloud cost and cold-start latency, and they discovered that the most practical tools are often the least dramatic ones.
 
-**1. Context comprehension** — AI can now understand complex system architecture and business logic. It is no longer limited to stitching together code snippets.
+C++ is not going away either. Latency-sensitive components in Chromium are still being rewritten and tuned with C++20 because in some places, the last few nanoseconds are the line between a good product and an incident.
 
-**2. Instant feedback loop** — With fast deployment technologies (PWA, WebRTC, etc.), developers can see the "vibe" of their code running within minutes and judge whether decisions were correct.
+Some domain-specific languages go even further. They do not try to adapt to generic frameworks; they write closer to the hardware. With something like Ampere's approach, the message is clear: in cloud data centers, memory allocation and runtime overhead can matter more than developer convenience.
 
-### Process Is the Soul — Without It, Disaster
+## Abstraction layers are not free lunch
 
-In Vibe Coding, the process is not there to limit efficiency. It is there to prevent runaway failure. Process-less AI Coding is dangerous because AI is fundamentally agreeable and prone to hallucination.
+What does all of this tell us? It tells us that when performance bottlenecks finally arrive, we are willing to give up abstraction layers that once looked untouchable.
 
-Why is process-less AI Coding uncontrollable?
+But let’s be honest: languages do not save you, frameworks do not save you, and cloud vendors definitely do not save you. They are tools. The real problem lives in the way we build systems.
 
-- **The Workslop Trap** — Without architecture review, an AI will keep generating code that "looks like it works" while accumulating technical debt. This is no different from writing a glossy but empty report.
-- **Path dependency and black-box risk** — Without testing and verification, you cannot detect logic failures at boundary conditions. Just like cognitive pollution, you will be seduced by the AI's internally consistent narrative — until the system breaks at the worst possible moment.
+We keep stacking layers as if adding one more indirection will solve every problem. In practice, we end up with a system nobody can fully understand. Every layer claims to improve efficiency, while the real complexity, latency, and cost are quietly passed on to the next person.
 
-## The Future: What Becomes Truly Scarce
+## The bill always comes due
 
-When AI reduces content production to near-zero cost, the real competitive moat returns to the human brain:
+Your cloud invoice, the battery on your phone that disappears too quickly, and the pager that wakes you at 3 a.m. all say the same thing: free lunch is never free.
 
-- **The ability to recognize bullshit** — to know what holds up under scrutiny
-- **The ability to ask real questions** — instead of answering questions AI could answer anyway
-- **The ability to think independently** — without being led by the AI's narrative
+Debloating is not a style preference. It is a survival constraint.
 
-## Closing
+Teams that do not start correcting course now will eventually face that 3 a.m. call.
 
-The future workplace will split into two kinds of people: those who use AI as an amplifier of capability, and those whose brains atrophy from over-dependence.
+Remember: frameworks do not go on call at 3 a.m. You do.
 
-The scariest outcome is not AI taking your job. It is slowly being hollowed out by letting AI do your thinking for you. The line between Workslop and Vibe Coding is not in the tools — it is in whether you are still holding the wheel.
+Debloating is not a slogan. It is reality.

@@ -36,8 +36,23 @@ weight = 3
 [services.googleAnalytics]
 ID = 'G-1HTJ05548S' # see https://gohugo.io/templates/internal/#configure-google-analytics
 
-[services.disqus]
-shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+[params.comments]
+provider = "giscus"
+
+[params.comments.giscus]
+enable = true
+repo = "yougikou/yougikou.github.io"
+repo_id = "MDEwOlJlcG9zaXRvcnkyNDc5NjkxMTQ="
+category = "Announcements"
+category_id = "DIC_kwDODse1Ws4C-RZf"
+mapping = "pathname"
+strict = false
+reactions_enabled = true
+emit_metadata = false
+input_position = "bottom"
+theme = "preferred_color_scheme"
+lang = "zh-CN"
+loading = "lazy"
 
 ########################## Permalinks ############################
 [permalinks.page]
