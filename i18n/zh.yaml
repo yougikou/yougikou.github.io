@@ -3,6 +3,16 @@ recent_articles: 最新文章
 recent_articles_intro: 从这里开始，挑一篇感兴趣的文章。
 view_all_articles: 浏览全部文章
 read_more: 阅读更多
+projects_eyebrow: 项目精选
+projects_heading: 我的项目
+projects_intro: 这里介绍我正在构建的工具与开源项目。内容会自动切换，也可以手动浏览。
+carousel: 轮播
+carousel_slide: 幻灯片
+previous_project: 上一个项目
+next_project: 下一个项目
+pause_projects: 暂停播放
+resume_projects: 继续播放
+choose_project: 选择项目
 send: 发送
 related_posts: 相关文章
 categories: 分类

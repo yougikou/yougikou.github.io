@@ -3,6 +3,16 @@ recent_articles: 新着記事
 recent_articles_intro: エンジニアリング、AI、より良いシステムづくりについて。
 view_all_articles: すべての記事を見る
 read_more: 続きを読む
+projects_eyebrow: 注目のプロジェクト
+projects_heading: 制作中のプロジェクト
+projects_intro: 開発中のツールやオープンプロジェクトを紹介します。自動で切り替わり、手動でも選べます。
+carousel: カルーセル
+carousel_slide: スライド
+previous_project: 前のプロジェクト
+next_project: 次のプロジェクト
+pause_projects: 自動再生を一時停止
+resume_projects: 自動再生を再開
+choose_project: プロジェクトを選択
 send: 送信
 related_posts: 関連記事
 categories: カテゴリー

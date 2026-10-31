@@ -82,43 +82,76 @@
   <!-- /Latest blog posts -->
 
   <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
+  {{ with .Params.features }}
+    {{ $projects := . }}
+    <section class="section-sm" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="row items-center justify-between">
-          <div
-            class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+        <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ T "projects_eyebrow" }}</p>
+            <h2 id="projects-heading" class="mb-0">{{ T "projects_heading" }}</h2>
           </div>
-          <div
-            class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
-              {{ .title | markdownify }}
-            </h2>
-            <p class="mb-8 text-lg">
-              {{ .content | markdownify }}
-            </p>
-            <ul>
-              {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
-                  {{ . | markdownify }}
-                </li>
-              {{ end }}
-            </ul>
-            {{ with .button }}
-              {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
+          <p class="mb-0 max-w-xl text-text-light dark:text-darkmode-text-light">{{ T "projects_intro" }}</p>
+        </div>
+        <div
+          class="swiper project-carousel"
+          data-project-carousel
+          role="region"
+          aria-roledescription="{{ T `carousel` }}"
+          aria-label="{{ T `projects_heading` }}">
+          <div class="swiper-wrapper">
+            {{ range $index, $project := $projects }}
+              <article
+                class="swiper-slide !h-auto"
+                role="group"
+                aria-roledescription="{{ T `carousel_slide` }}"
+                aria-label="{{ add $index 1 }} / {{ len $projects }}">
+                <div class="h-full rounded-xl bg-light px-6 py-8 dark:bg-darkmode-light md:px-10 md:py-10">
+                  <div class="row items-center justify-between">
+                    <div class="mb-6 md:col-5 md:mb-0 {{ if not (modBool $index 2) }}md:order-2{{ end }}">
+                      {{ partial "image" (dict "Src" $project.image "Alt" ($project.title | plainify) "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+                    </div>
+                    <div class="md:col-7 lg:col-6 {{ if not (modBool $index 2) }}md:order-1{{ end }}">
+                      <h3 class="mb-4">{{ $project.title | markdownify }}</h3>
+                      <p class="mb-8 text-lg">{{ $project.content | markdownify }}</p>
+                      <ul>
+                        {{ range $project.bulletpoints }}
+                          <li class="relative mb-4 pl-6">
+                            <i class="fa fa-check absolute left-0 top-1.5" aria-hidden="true"></i>
+                            {{ . | markdownify }}
+                          </li>
+                        {{ end }}
+                      </ul>
+                      {{ with $project.button }}
+                        {{ if .enable }}
+                          <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                            {{ .label }}
+                            <i class="fa fa-arrow-right pl-2" aria-hidden="true"></i>
+                          </a>
+                        {{ end }}
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              </article>
             {{ end }}
           </div>
+          {{ if gt (len $projects) 1 }}
+            <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <button class="project-carousel-prev btn btn-outline-primary !px-4" data-project-prev type="button" aria-label="{{ T `previous_project` }}">←</button>
+                <button class="project-carousel-next btn btn-outline-primary !px-4" data-project-next type="button" aria-label="{{ T `next_project` }}">→</button>
+                <button
+                  class="project-carousel-toggle btn btn-outline-primary"
+                  data-project-toggle
+                  data-pause-label="{{ T `pause_projects` }}"
+                  data-resume-label="{{ T `resume_projects` }}"
+                  type="button"
+                  aria-pressed="false">{{ T "pause_projects" }}</button>
+              </div>
+              <div class="project-carousel-pagination swiper-pagination !static !w-auto" data-project-pagination role="group" aria-label="{{ T `choose_project` }}"></div>
+            </div>
+          {{ end }}
         </div>
       </div>
     </section>

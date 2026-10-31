@@ -3,6 +3,16 @@ recent_articles: Latest Articles
 recent_articles_intro: Fresh ideas on engineering, AI, and building better systems.
 view_all_articles: Explore all articles
 read_more: Read More
+projects_eyebrow: Featured Projects
+projects_heading: My Projects
+projects_intro: Tools and open projects I am building. Slides advance automatically, or you can choose one yourself.
+carousel: carousel
+carousel_slide: slide
+previous_project: Previous project
+next_project: Next project
+pause_projects: Pause slides
+resume_projects: Resume slides
+choose_project: Choose a project
 send: Send
 related_posts: Related Posts
 categories: Categories

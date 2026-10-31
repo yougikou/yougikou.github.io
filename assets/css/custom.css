@@ -1,1 +1,13 @@
 /* Add your own custom styles here */
+
+.project-carousel-pagination .swiper-pagination-bullet {
+  @apply !h-2.5 !w-2.5 !bg-primary !opacity-40 transition-all;
+}
+
+.project-carousel-pagination .swiper-pagination-bullet-active {
+  @apply !w-6 !rounded-full !opacity-100;
+}
+
+.project-carousel-pagination .swiper-pagination-bullet:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
