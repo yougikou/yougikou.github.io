@@ -27,6 +27,33 @@ features:
       link: "https://yougikou.github.io/openroutes/"
       target: "_blank"
 
+  - title: "md-with-git <br> Git上のMarkdownを検索できるドキュメント空間へ"
+    image: "/images/posts/md-with-git-cover.png"
+    content: "md-with-gitは、React向けのドキュメントビューア兼ホスト統合パッケージです。Gitリポジトリ内で指定したディレクトリのMarkdownだけを読み取り、閲覧・検索・履歴確認ができるドキュメント空間に整理します。単体DemoはViewer全体を、ブランド版は既存プロダクトへの組み込み方を示します。"
+    bulletpoints:
+      - "scopeでドキュメントのルートを限定し、ツリー、検索、相対リンクを同じ範囲に保ちます。"
+      - "GitHub、Bitbucket Cloud、ローカルフォルダー、ローカルGitに対応。ブランチ、タグ、ファイル履歴、差分を確認できます。"
+      - "GFM、Mermaid、KaTeX、frontmatter、相対リソースをサポートします。"
+      - "ブランド、テーマ、ルーティング、明示登録されたMarkdownレンダラーはホストが管理し、文書から拡張コードを動的に読み込みません。"
+      - "[md-with-gitのソース](https://github.com/yougikou/md-with-git) · [ブランド版Demo](https://yougikou.github.io/md-with-git-branded/) · [ブランド版ソース](https://github.com/yougikou/md-with-git-branded)"
+    button:
+      enable: true
+      label: "単体Demoを開く"
+      link: "https://yougikou.github.io/md-with-git/"
+      target: "_blank"
+
+  - title: "md-with-git-branded <br> ブランドに合わせたドキュメント体験"
+    image: "/images/posts/md-with-git-cover.png"
+    content: "Northstar Docsを例に、npmで公開されたViewerをReactアプリへ組み込み、ナビゲーション、ブランド表現、ライト／ダークテーマ、管理されたMarkdown拡張をホスト側で制御する方法を紹介しています。"
+    bulletpoints:
+      - "DocsRendererProviderからブランド、テーマトークン、文書ページのアイコンを設定します。"
+      - "React RouterにViewerを組み込み、登録済みのレンダラーだけをカスタム表示に使います。"
+      - "Demo：[yougikou.github.io/md-with-git-branded](https://yougikou.github.io/md-with-git-branded/) · [GitHubソース](https://github.com/yougikou/md-with-git-branded)"
+    button:
+      enable: true
+      label: "ブランド版Demoを開く"
+      link: "https://yougikou.github.io/md-with-git-branded/"
+      target: "_blank"
   # - title: "Hugoの主な機能を発見"
   #   image: "/images/service-2.png"
   #   content: "Hugoは、高速でコンテンツ中心のWebサイトを構築するためのオールインワンWebフレームワークです。開発者とWebサイト作成者のために、さまざまなエキサイティングな機能を提供します。主な機能の一部は次のとおりです："

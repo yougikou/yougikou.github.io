@@ -27,6 +27,33 @@ features:
       link: "https://yougikou.github.io/openroutes/"
       target: "_blank"
 
+  - title: "md-with-git <br> Turn Git Markdown into a searchable docs space"
+    image: "/images/posts/md-with-git-cover.png"
+    content: "md-with-git is a React documentation viewer and host integration package. It reads Markdown from a selected directory in a Git repository and organizes it into a browsable, searchable space with history. The standalone demo shows the full viewer; the branded sample shows how to embed it in an existing product."
+    bulletpoints:
+      - "Use scope to bound the docs root, keeping navigation, search, and relative links within one space."
+      - "Supports GitHub, Bitbucket Cloud, local folders, and local Git, with branches, tags, file history, and comparisons."
+      - "Renders GFM, Mermaid, KaTeX, frontmatter, and relative assets."
+      - "The host owns branding, themes, routing, and explicitly registered Markdown renderers; document content cannot dynamically load extensions."
+      - "[md-with-git source](https://github.com/yougikou/md-with-git) · [Branded host demo](https://yougikou.github.io/md-with-git-branded/) · [Branded sample source](https://github.com/yougikou/md-with-git-branded)"
+    button:
+      enable: true
+      label: "Open standalone demo"
+      link: "https://yougikou.github.io/md-with-git/"
+      target: "_blank"
+
+  - title: "md-with-git-branded <br> Make the docs viewer feel like your product"
+    image: "/images/posts/md-with-git-cover.png"
+    content: "The Northstar Docs sample shows how a React host can use the npm package while keeping control of product navigation, branding, light and dark themes, and trusted Markdown extensions."
+    bulletpoints:
+      - "Provide branding, theme tokens, and document icons through DocsRendererProvider."
+      - "Host the viewer with React Router and explicitly register any custom renderers."
+      - "Demo: [yougikou.github.io/md-with-git-branded](https://yougikou.github.io/md-with-git-branded/) · [GitHub source](https://github.com/yougikou/md-with-git-branded)"
+    button:
+      enable: true
+      label: "Open branded sample"
+      link: "https://yougikou.github.io/md-with-git-branded/"
+      target: "_blank"
   # - title: "Discover Key Features of Hugo"
   #   image: "/images/service-2.png"
   #   content: "Hugo is an all-in-one web framework for building fast, content-centric websites. It offers an exciting range of features for developers and website creators. Some key features include:"
