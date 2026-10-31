@@ -2,7 +2,7 @@
 title: 'Debloating Is Not a Choice; Performance Forces It'
 date: 2026-06-09T08:40:00+09:00
 author: "Giko"
-image: "/images/posts/ai-workslop-vibe-coding/cover.svg"
+image: "/images/posts/debloating-performance-forces-it/cover.svg"
 categories: ["Engineering", "Performance", "Languages"]
 tags: ["Zig", "Mojo", "Rust", "Go", "C++", "DSL", "Abstraction", "Performance", "Startup Time", "Cloud Cost"]
 draft: false

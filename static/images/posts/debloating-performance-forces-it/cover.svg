@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101827"/>
+      <stop offset="1" stop-color="#080D16"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="250" y1="330" x2="1050" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2A65A" stop-opacity=".18"/>
+      <stop offset=".55" stop-color="#55D6BE" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#8AF0D5"/>
+    </linearGradient>
+    <filter id="glow" x="700" y="160" width="410" height="340" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g stroke="#263348" stroke-width="1" opacity=".55">
+    <path d="M0 126.5h1200M0 252.5h1200M0 378.5h1200M0 504.5h1200"/>
+    <path d="M120.5 0v630M240.5 0v630M360.5 0v630M480.5 0v630M600.5 0v630M720.5 0v630M840.5 0v630M960.5 0v630M1080.5 0v630"/>
+  </g>
+
+  <text x="80" y="88" fill="#8FA4BA" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="4">SYSTEMS UNDER LOAD</text>
+  <text x="80" y="155" fill="#F1F5F9" font-family="Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="1">DEBLOATING</text>
+  <text x="82" y="190" fill="#9AAABD" font-family="Arial, sans-serif" font-size="17" letter-spacing="2">WHEN PERFORMANCE SETS THE LIMIT</text>
+
+  <!-- Layers of abstraction, compressing into a narrow path -->
+  <g stroke="#63748A" stroke-width="2">
+    <rect x="83" y="264" width="306" height="54" rx="10" fill="#202D3E"/>
+    <rect x="112" y="329" width="277" height="54" rx="10" fill="#1B2838"/>
+    <rect x="145" y="394" width="244" height="54" rx="10" fill="#172333"/>
+  </g>
+  <g fill="#A6B4C5" opacity=".72">
+    <circle cx="111" cy="291" r="4"/><circle cx="128" cy="291" r="4"/><circle cx="145" cy="291" r="4"/>
+    <circle cx="140" cy="356" r="4"/><circle cx="157" cy="356" r="4"/><circle cx="174" cy="356" r="4"/>
+    <circle cx="173" cy="421" r="4"/><circle cx="190" cy="421" r="4"/><circle cx="207" cy="421" r="4"/>
+  </g>
+  <g stroke="#8292A6" stroke-width="2" opacity=".7">
+    <path d="M240 318v11M270 383v11" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Bottleneck -->
+  <path d="M389 292h90l68 48-68 48h-90v-96Z" fill="#283445" stroke="#728197" stroke-width="2"/>
+  <path d="M409 310h67l43 30-43 30h-67v-60Z" fill="#101827" stroke="#F2A65A" stroke-opacity=".7" stroke-width="2"/>
+  <circle cx="456" cy="340" r="7" fill="#F2A65A"/>
+
+  <!-- Fast, clean path out of the system -->
+  <path d="M548 340h476" stroke="url(#beam)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M548 340h476" stroke="#55D6BE" stroke-width="22" stroke-linecap="round" opacity=".28" filter="url(#glow)"/>
+  <path d="m1005 320 28 20-28 20" stroke="#8AF0D5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Performance signal -->
+  <g transform="translate(818 205)">
+    <circle cx="91" cy="82" r="67" fill="#10251F" stroke="#55D6BE" stroke-width="2"/>
+    <circle cx="91" cy="82" r="50" stroke="#35594F" stroke-width="2" stroke-dasharray="3 8"/>
+    <path d="M91 48v35l28-20" stroke="#8AF0D5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="91" cy="82" r="6" fill="#8AF0D5"/>
+    <path d="M78 4h26M91 4v11" stroke="#55D6BE" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+    <text x="86" y="520" fill="#D19A68">MORE LAYERS</text>
+    <text x="868" y="520" fill="#6ADFC4">LESS OVERHEAD</text>
+  </g>
+  <path d="M80 548h1040" stroke="#344154" stroke-width="1"/>
+  <text x="80" y="582" fill="#718197" font-family="Arial, sans-serif" font-size="13" letter-spacing="2">STARTUP TIME  ·  MEMORY  ·  LATENCY  ·  CLOUD COST</text>
+</svg>

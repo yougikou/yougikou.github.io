@@ -2,7 +2,7 @@
 title: '肥大化を削るのは選択ではない。性能がそうさせる'
 date: 2026-06-09T08:40:00+09:00
 author: "Giko"
-image: "/images/posts/ai-workslop-vibe-coding/cover.svg"
+image: "/images/posts/debloating-performance-forces-it/cover.svg"
 categories: ["エンジニアリング", "性能", "言語"]
 tags: ["Zig", "Mojo", "Rust", "Go", "C++", "DSL", "抽象化", "性能", "起動速度", "クラウドコスト"]
 draft: false
