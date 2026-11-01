@@ -1,5 +1,5 @@
 ---
-title: "Can a Rakuten Turbo Still Be Useful After Cancellation? A China Mobile SIM Test"
+title: "Can a Rakuten Turbo Still Be Useful After Cancellation? POVO SIM Connects Successfully"
 date: 2026-10-31T12:00:00+09:00
 author: "Giko"
 image: "/images/posts/rakuten-turbo-apn-illustration.png"
@@ -26,14 +26,12 @@ I referred to [Rakuten5GTurboAPI](https://github.com/0xNslabs/Rakuten5GTurboAPI)
 
 This is not an official reuse method from Rakuten Mobile, and it does not mean every device, SIM, or region will work. My result applies only to the device, SIM, and network I tested. I did not use a vulnerability in this test, though the project does include vulnerability-related functions that can carry device and security risks. If you consider trying them, use only equipment you own or manage, and read the project details and risks first.
 
-## Next: povo 2.0
+## povo 2.0 SIM also connected successfully
 
-I have purchased povo 2.0 and plan to test whether it works with this device.
+I later tested a povo 2.0 SIM in this Rakuten Turbo and confirmed that it connected to the internet. In my device and test setup, both the China Mobile SIM and the povo 2.0 SIM worked.
 
 I also wanted to try Rakuten Saikyo Plan (Data Type), but Rakuten Mobile suspended new applications for that plan on March 5, 2026. New applications remain unavailable until Rakuten announces that they have resumed. [Rakuten Mobile's notice (Japanese)](https://network.mobile.rakuten.co.jp/information/news/service/3652/)
 
 ## For other Rakuten Turbo owners
 
-This one test does not show that everyone can reuse a Rakuten Turbo after cancelling. In my setup, however, APN configuration worked on firmware 1.3.19, and the device connected through au roaming with a different SIM (China Mobile). Being able to change the APN and connect to another SIM's network is already evidence that the cancelled Rakuten Turbo can still be useful. I hope more people in Japan, especially those with an idle device after cancellation, will find this hands-on result.
-
-I will update this post after testing povo 2.0.
+These tests do not show that everyone can reuse a Rakuten Turbo after cancelling. In my setup, APN configuration worked on firmware 1.3.19, the China Mobile SIM connected through au roaming, and the povo 2.0 SIM also connected to the internet. These results show that a cancelled Rakuten Turbo can still be useful. I hope more people in Japan, especially those with an idle device after cancellation, will find this hands-on result.
